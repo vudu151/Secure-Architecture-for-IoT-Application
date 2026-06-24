@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "author": "Hung Pham Ngoc",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -9.3,
+      "left": 167.4,
+      "attrs": { "temperature": "37", "humidity": "69.5" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -185.6,
+      "left": 159.2,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": -181.64, "left": 57.6, "attrs": {} },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": 138.4,
+      "left": -189.78,
+      "attrs": {}
+    },
+    { "type": "wokwi-led", "id": "led1", "top": -42, "left": -169, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 62.4,
+      "left": -202.15,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v124.8", "h-211.2", "v-201.6" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v115.2", "h-96", "v-192" ] ],
+    [ "lcd1:SDA", "esp:21", "green", [ "h-28.8", "v211.4" ] ],
+    [ "lcd1:SCL", "esp:22", "green", [ "h-38.4", "v173.1" ] ],
+    [ "lcd1:GND", "esp:GND.2", "black", [ "h-19.2", "v182.4", "h-38.4" ] ],
+    [ "lcd1:VCC", "vcc1:VCC", "red", [ "h0" ] ],
+    [ "pir1:OUT", "esp:12", "green", [ "v9.6", "h95.86", "v-96" ] ],
+    [ "pir1:GND", "esp:GND.1", "black", [ "v19.2", "h114.94", "v-96" ] ],
+    [ "pir1:VCC", "esp:3V3", "red", [ "v28.8", "h96", "v-220.8" ] ],
+    [ "led1:A", "esp:32", "green", [ "v0" ] ],
+    [ "led1:C", "r1:1", "green", [ "v28.8", "h-18.8" ] ],
+    [ "esp:GND.1", "r1:2", "black", [ "h-76.65", "v-48", "h-86.4", "v0", "h-9.6" ] ]
+  ],
+  "dependencies": {}
+}

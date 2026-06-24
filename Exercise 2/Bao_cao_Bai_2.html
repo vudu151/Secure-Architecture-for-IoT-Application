@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Báo cáo Bài tập 2: Trao đổi dữ liệu qua MQTT</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .report-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e1e8ed;
+        }
+        h1 {
+            color: #1e3a8a;
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .subtitle {
+            text-align: center;
+            font-style: italic;
+            color: #6b7280;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        .student-info {
+            background-color: #f3f4f6;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            border-left: 5px solid #2563eb;
+        }
+        .student-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .student-info td {
+            padding: 6px 12px;
+            font-size: 15px;
+        }
+        .student-info td.label {
+            font-weight: bold;
+            width: 150px;
+            color: #374151;
+        }
+        h2 {
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            font-size: 20px;
+        }
+        h3 {
+            color: #1d4ed8;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #4b5563;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        code {
+            font-family: Consolas, Monaco, monospace;
+            background-color: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #0f172a;
+        }
+        pre {
+            background-color: #0f172a;
+            color: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: Consolas, Monaco, monospace;
+            font-size: 13.5px;
+            line-height: 1.5;
+            margin: 15px 0;
+        }
+        .code-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #64748b;
+            margin-top: 15px;
+            margin-bottom: -10px;
+            text-transform: uppercase;
+        }
+        .screenshot-placeholder {
+            border: 2px dashed #9ca3af;
+            background-color: #f9fafb;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 6px;
+            margin: 20px 0;
+            color: #6b7280;
+            font-style: italic;
+            font-size: 14px;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 13px;
+            color: #9ca3af;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 20px;
+        }
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .report-container {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-container">
+    <h1>Báo cáo Bài tập 2</h1>
+    <div class="subtitle">Môn học: Kiến trúc An ninh cho Ứng dụng IoT (Secure Architecture for IoT Application)</div>
+
+    <div class="student-info">
+        <table>
+            <tr>
+                <td class="label">Đề tài bài tập:</td>
+                <td>Trao đổi dữ liệu sử dụng giao thức MQTT và đóng gói JSON</td>
+            </tr>
+            <tr>
+                <td class="label">Họ và tên:</td>
+                <td>[Điền họ tên của bạn vào đây]</td>
+            </tr>
+            <tr>
+                <td class="label">Mã số sinh viên:</td>
+                <td>[Điền MSSV của bạn vào đây]</td>
+            </tr>
+            <tr>
+                <td class="label">Lớp học phần:</td>
+                <td>[Điền lớp học phần vào đây]</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2>1. Mục tiêu bài tập</h2>
+    <ul>
+        <li>Tìm hiểu mô hình hoạt động của giao thức truyền tin nhẹ <strong>MQTT (Publish / Subscribe)</strong> thông qua một MQTT Broker trung gian (HiveMQ).</li>
+        <li>Sử dụng thư viện <strong>Eclipse Paho MQTT Client</strong> để lập trình chức năng gửi (Publish) và nhận (Subscribe) dữ liệu trên môi trường Java.</li>
+        <li>Thực hiện đóng gói thông tin cảm biến giả lập gồm <code>DeviceName</code>, <code>temperature</code> và <code>humidity</code> thành chuỗi định dạng <strong>JSON</strong> (sử dụng thư viện <code>org.json</code>) trước khi truyền đi.</li>
+        <li>Sử dụng công cụ kiểm thử MQTT (MQTTBox hoặc console) để kiểm chứng kết quả chạy của chương trình.</li>
+    </ul>
+
+    <h2>2. Kiến trúc & Định dạng Dữ liệu</h2>
+    <p>Kiến trúc truyền thông sử dụng một MQTT Broker công cộng (<code>broker.hivemq.com:1883</code>). Quy trình trao đổi tin nhắn diễn ra như sau:</p>
+    <ol>
+        <li><strong>Publisher (Luồng Gửi):</strong> Tạo dữ liệu cảm biến ngẫu nhiên hoặc nhập từ bàn phím, định dạng thành JSON byte array, và gửi lên topic <code>hust/iot/sensor/data</code> với chất lượng dịch vụ QoS = 1.</li>
+        <li><strong>Subscriber (Luồng Nhận):</strong> Lắng nghe liên tục trên topic <code>hust/iot/sensor/data</code>. Khi nhận được tin nhắn, Subscriber sẽ giải mã chuỗi JSON, trích xuất các giá trị cảm biến và in ra màn hình.</li>
+    </ol>
+    <p>Cấu trúc gói tin JSON trao đổi giữa các client:</p>
+    <pre>{
+    "DeviceName": "my-mqtt-client",
+    "temperature": 30.0,
+    "humidity": 60.0
+}</pre>
+
+    <h2>3. Mã nguồn chương trình chính</h2>
+
+    <div class="code-title">MqttPublisher.java</div>
+    <pre>package com.example.mqtt;
+
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.json.JSONObject;
+
+public class MqttPublisher {
+    private final String brokerUrl;
+    private final String clientId;
+
+    public MqttPublisher(String brokerUrl, String clientId) {
+        this.brokerUrl = brokerUrl;
+        this.clientId = clientId;
+    }
+
+    public void publishData(String topic, String deviceName, double temperature, double humidity) {
+        MemoryPersistence persistence = new MemoryPersistence();
+        try {
+            MqttClient client = new MqttClient(brokerUrl, clientId, persistence);
+            MqttConnectOptions connOpts = new MqttConnectOptions();
+            connOpts.setCleanSession(true);
+            connOpts.setConnectionTimeout(10);
+            
+            client.connect(connOpts);
+
+            JSONObject payload = new JSONObject();
+            payload.put("DeviceName", deviceName);
+            payload.put("temperature", temperature);
+            payload.put("humidity", humidity);
+            
+            MqttMessage message = new MqttMessage(payload.toString(4).getBytes());
+            message.setQos(1);
+            
+            client.publish(topic, message);
+            client.disconnect();
+        } catch (MqttException me) {
+            System.err.println("Lỗi MQTT Publisher: " + me.getMessage());
+        }
+    }
+}</pre>
+
+    <div class="code-title">MqttSubscriber.java</div>
+    <pre>package com.example.mqtt;
+
+import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+import org.json.JSONObject;
+import org.json.JSONException;
+
+public class MqttSubscriber implements MqttCallback {
+    private final String brokerUrl;
+    private final String clientId;
+    private MqttClient client;
+    private boolean isRunning = false;
+
+    public MqttSubscriber(String brokerUrl, String clientId) {
+        this.brokerUrl = brokerUrl;
+        this.clientId = clientId;
+    }
+
+    public synchronized void start(String topic) {
+        try {
+            client = new MqttClient(brokerUrl, clientId, new MemoryPersistence());
+            MqttConnectOptions connOpts = new MqttConnectOptions();
+            connOpts.setCleanSession(true);
+            connOpts.setAutomaticReconnect(true);
+            client.setCallback(this);
+            client.connect(connOpts);
+            client.subscribe(topic);
+            isRunning = true;
+        } catch (MqttException me) {
+            System.err.println("Lỗi Subscriber: " + me.getMessage());
+        }
+    }
+
+    public synchronized void stop() {
+        try {
+            if (client != null && client.isConnected()) {
+                client.disconnect();
+            }
+        } catch (MqttException me) {
+            System.err.println("Lỗi dừng Subscriber: " + me.getMessage());
+        } finally { isRunning = false; }
+    }
+
+    public boolean isRunning() { return isRunning; }
+
+    @Override
+    public void connectionLost(Throwable cause) {}
+
+    @Override
+    public void messageArrived(String topic, MqttMessage message) {
+        try {
+            String payload = new String(message.getPayload());
+            JSONObject json = new JSONObject(payload);
+            String deviceName = json.optString("DeviceName", "Unknown");
+            double temp = json.optDouble("temperature", Double.NaN);
+            double hum = json.optDouble("humidity", Double.NaN);
+
+            System.out.println("\n--- ĐÃ NHẬN GÓI TIN MQTT ---");
+            System.out.println("Thiết bị: " + deviceName);
+            System.out.println("Nhiệt độ: " + temp + " °C");
+            System.out.println("Độ ẩm: " + hum + " %");
+        } catch (JSONException e) {
+            System.err.println("Lỗi định dạng JSON: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public void deliveryComplete(IMqttDeliveryToken token) {}
+}</pre>
+
+    <h2>4. Kết quả chạy thử chương trình</h2>
+    
+    <h3>4.1. Biên dịch và khởi chạy</h3>
+    <p>Chương trình được biên dịch và chạy trực tiếp bằng Terminal trên môi trường Linux Ubuntu thông qua các file shell script <code>build.sh</code> và <code>run.sh</code>:</p>
+    
+    <div class="screenshot-placeholder">
+        [ẢNH CHỤP 1: Chèn ảnh chụp terminal lúc biên dịch ./build.sh và khởi động chương trình ./run.sh]
+        <br>
+        <span style="font-size: 12px; color: #888;">(Có thể dùng ảnh chụp màn hình terminal của bạn đang dừng ở dòng chọn Broker URL)</span>
+    </div>
+
+    <h3>4.2. Gửi và nhận tin nhắn MQTT</h3>
+    <p>Thực hiện bật Subscriber nhận dữ liệu trên Java, đồng thời tiến hành Publish tin nhắn JSON. Subscriber bắt gói tin thành công, giải mã định dạng JSON và hiển thị đầy đủ các giá trị:</p>
+
+    <div class="screenshot-placeholder">
+        [ẢNH CHỤP 2: Chèn ảnh chụp terminal hiển thị luồng dữ liệu nhận được dạng JSON được parse chi tiết]
+    </div>
+
+    <h2>5. Kết luận</h2>
+    <p>Qua bài tập, em đã làm quen và làm chủ được các khái niệm cơ bản của giao thức mạng MQTT:</p>
+    <ul>
+        <li>Cách cấu hình và thực thi giao thức Publish / Subscribe độc lập trong các tiến trình mạng.</li>
+        <li>Tầm quan trọng của việc gán các Client ID duy nhất để không xảy ra xung đột khi kết nối chung vào cùng một Broker.</li>
+        <li>Kỹ thuật đóng gói, truyền tải và bóc tách dữ liệu có cấu trúc bằng định dạng JSON giúp chuẩn hóa thông điệp IoT.</li>
+    </ul>
+
+    <div class="footer">
+        Học viện Công nghệ Bưu chính Viễn thông / Đại học Bách khoa Hà Nội
+        <br>
+        Báo cáo kết quả học tập - 2026
+    </div>
+</div>
+
+</body>
+</html>

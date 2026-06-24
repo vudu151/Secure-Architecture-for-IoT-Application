@@ -1,0 +1,27 @@
+# .gitignore cho WebAPIDemo (ASP.NET Core / .NET 10)
+
+## Build artifacts
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.user
+*.userosscache
+*.sln.docstates
+
+## IDEs & Editors (VS Code, VS, Rider)
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.idea/
+
+## OS-specific files
+.DS_Store
+Thumbs.db
+
+## Office Temporary Files
+~$*.docx
+~$*.doc

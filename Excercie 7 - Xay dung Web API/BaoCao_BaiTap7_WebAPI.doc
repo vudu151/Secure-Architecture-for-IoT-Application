@@ -1,0 +1,1533 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type  content="text/html; charset=utf-8" ><meta name=ProgId  content=Word.Document ><meta name=Generator  content="Microsoft Word 14" ><meta name=Originator  content="Microsoft Word 14" ><title></title><!--[if gte mso 9]><xml><o:DocumentProperties><o:Author>duvx</o:Author><o:LastAuthor>duvx</o:LastAuthor><o:Revision>1</o:Revision><o:Pages>1</o:Pages><o:Lines>1</o:Lines><o:Paragraphs>1</o:Paragraphs></o:DocumentProperties><o:CustomDocumentProperties><o:KSOProductBuildVer dt:dt="string" >1033-11.1.0.11723</o:KSOProductBuildVer></o:CustomDocumentProperties></xml><![endif]--><!--[if gte mso 9]><xml><o:OfficeDocumentSettings></o:OfficeDocumentSettings></xml><![endif]--><!--[if gte mso 9]><xml><w:WordDocument><w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel><w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery><w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery><w:DocumentKind>DocumentNotSpecified</w:DocumentKind><w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing><w:View>Print</w:View><w:Compatibility></w:Compatibility><w:Zoom>0</w:Zoom></w:WordDocument></xml><![endif]--><!--[if gte mso 9]><xml><w:LatentStyles DefLockedState="false"  DefUnhideWhenUsed="true"  DefSemiHidden="true"  DefQFormat="false"  DefPriority="99"  LatentStyleCount="260" >
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Normal" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="heading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="heading 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toc 9" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footer" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="index heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  QFormat="true"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of figures" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="envelope return" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="footnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="line number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="page number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote reference" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="endnote text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="table of authorities" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="macro" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="toa heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Bullet 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Number 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Closing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="List Continue 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Message Header" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Subtitle" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Salutation" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Date" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text First Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Note Heading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Body Text Indent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Block Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Hyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="FollowedHyperlink" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Strong" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Emphasis" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Document Map" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Plain Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="E-mail Signature" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Normal (Web)" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Acronym" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Address" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Cite" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Code" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Definition" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Keyboard" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Preformatted" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Sample" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Typewriter" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="HTML Variable" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  UnhideWhenUsed="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="annotation subject" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / a / i" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / 1.1 / 1.1.1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Article / Section" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Simple 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Classic 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Colorful 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Columns 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 7" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table List 8" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table 3D effects 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Contemporary" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Elegant" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Professional" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Subtle 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Web 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Balloon Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Table Theme" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Placeholder Text" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No Spacing" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="List Paragraph" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Intense Quote" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 1" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 2" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 3" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 4" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 5" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="60"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="61"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="62"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Light Grid Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="63"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="64"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Shading 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="65"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="66"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium List 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="67"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 1 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="68"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 2 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="69"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Medium Grid 3 Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="70"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Dark List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="71"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Shading Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="72"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful List Accent 6" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="73"  SemiHidden="false"  UnhideWhenUsed="false"  Name="Colorful Grid Accent 6" ></w:LsdException>
+</w:LatentStyles></xml><![endif]--><style>
+@font-face{
+font-family:"Times New Roman";
+}
+
+@font-face{
+font-family:"宋体";
+}
+
+@font-face{
+font-family:"SimSun";
+}
+
+@font-face{
+font-family:"Wingdings";
+}
+
+@font-face{
+font-family:"Symbol";
+}
+
+@font-face{
+font-family:"Courier New";
+}
+
+@font-face{
+font-family:"Calibri";
+}
+
+@font-face{
+font-family:"SimSun";
+}
+
+@list l0:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:36.0000pt;
+mso-level-number-position:left;
+margin-left:36.0000pt;text-indent:-18.0000pt;font-family:Symbol;font-size:10.0000pt;}
+
+@list l0:level2{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"o";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Courier New';font-size:10.0000pt;}
+
+@list l0:level3{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l0:level4{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l0:level5{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l0:level6{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l0:level7{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l0:level8{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l0:level9{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l1:level1{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%1.";
+mso-level-tab-stop:36.0000pt;
+mso-level-number-position:left;
+margin-left:36.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level2{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%2.";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level3{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%3.";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level4{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%4.";
+mso-level-tab-stop:125.8500pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level5{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%5.";
+mso-level-tab-stop:161.9000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level6{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%6.";
+mso-level-tab-stop:197.9000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level7{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%7.";
+mso-level-tab-stop:233.9000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level8{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%8.";
+mso-level-tab-stop:269.9000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l1:level9{
+mso-level-number-format:decimal;
+mso-level-suffix:tab;
+mso-level-text:"%9.";
+mso-level-tab-stop:305.9000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:'Times New Roman';font-size:12.0000pt;}
+
+@list l2:level1{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:36.0000pt;
+mso-level-number-position:left;
+margin-left:36.0000pt;text-indent:-18.0000pt;font-family:Symbol;font-size:10.0000pt;}
+
+@list l2:level2{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"o";
+mso-level-tab-stop:72.0000pt;
+mso-level-number-position:left;
+margin-left:72.0000pt;text-indent:-18.0000pt;font-family:'Courier New';font-size:10.0000pt;}
+
+@list l2:level3{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:108.0000pt;
+mso-level-number-position:left;
+margin-left:108.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l2:level4{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:144.0000pt;
+mso-level-number-position:left;
+margin-left:144.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l2:level5{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:180.0000pt;
+mso-level-number-position:left;
+margin-left:180.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l2:level6{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:216.0000pt;
+mso-level-number-position:left;
+margin-left:216.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l2:level7{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:252.0000pt;
+mso-level-number-position:left;
+margin-left:252.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l2:level8{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:288.0000pt;
+mso-level-number-position:left;
+margin-left:288.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+@list l2:level9{
+mso-level-number-format:bullet;
+mso-level-suffix:tab;
+mso-level-text:"";
+mso-level-tab-stop:324.0000pt;
+mso-level-number-position:left;
+margin-left:324.0000pt;text-indent:-18.0000pt;font-family:Wingdings;font-size:10.0000pt;}
+
+p.MsoNormal{
+mso-style-name:Normal;
+mso-style-parent:"";
+margin:0pt;
+margin-bottom:.0001pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+h1{
+mso-style-name:"Heading 1";
+mso-style-next:Normal;
+margin-top:20.0000pt;
+margin-bottom:15.0000pt;
+page-break-after:avoid;
+text-align:center;
+font-family:'Times New Roman';
+mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);
+font-weight:bold;
+text-transform:uppercase;
+font-size:17.0000pt;
+mso-font-kerning:22.0000pt;
+}
+
+h2{
+mso-style-name:"Heading 2";
+mso-style-noshow:yes;
+mso-style-next:Normal;
+margin-top:15.0000pt;
+margin-bottom:6.0000pt;
+border-bottom:1.5000pt solid rgb(26,54,93);
+mso-border-bottom-alt:1.5000pt solid rgb(26,54,93);
+padding:0pt 0pt 2pt 0pt ;
+page-break-after:avoid;
+text-align:left;
+font-family:'Times New Roman';
+mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);
+font-weight:bold;
+text-transform:uppercase;
+font-size:14.0000pt;
+}
+
+h3{
+mso-style-name:"Heading 3";
+mso-style-noshow:yes;
+mso-style-next:Normal;
+margin-top:10.0000pt;
+margin-bottom:4.0000pt;
+page-break-after:avoid;
+text-align:left;
+font-family:'Times New Roman';
+mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);
+font-weight:bold;
+font-size:13.0000pt;
+}
+
+h4{
+mso-style-name:"Heading 4";
+mso-style-noshow:yes;
+mso-style-next:Normal;
+margin-top:5.0000pt;
+margin-bottom:5.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+page-break-after:avoid;
+text-align:left;
+font-family:'Times New Roman';
+mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);
+font-weight:bold;
+font-size:12.0000pt;
+}
+
+h5{
+mso-style-name:"Heading 5";
+mso-style-noshow:yes;
+mso-style-next:Normal;
+margin-top:5.0000pt;
+margin-bottom:5.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:SimSun;
+font-weight:bold;
+font-size:10.0000pt;
+}
+
+h6{
+mso-style-name:"Heading 6";
+mso-style-noshow:yes;
+mso-style-next:Normal;
+margin-top:5.0000pt;
+margin-bottom:5.0000pt;
+mso-margin-top-alt:auto;
+mso-margin-bottom-alt:auto;
+text-align:left;
+font-family:SimSun;
+font-weight:bold;
+font-size:7.5000pt;
+}
+
+span.10{
+font-family:'Times New Roman';
+}
+
+span.15{
+font-family:'Times New Roman';
+color:rgb(0,0,255);
+text-decoration:underline;
+text-underline:single;
+}
+
+span.16{
+font-family:'Courier New';
+font-size:10.0000pt;
+}
+
+p.17{
+mso-style-name:cover-border;
+margin-top:3.7500pt;
+margin-right:3.7500pt;
+margin-bottom:3.7500pt;
+margin-left:3.7500pt;
+border-top:1.0000pt double rgb(26,54,93);
+mso-border-top-alt:0.7500pt double rgb(26,54,93);
+border-right:1.0000pt double rgb(26,54,93);
+mso-border-right-alt:0.7500pt double rgb(26,54,93);
+border-bottom:1.0000pt double rgb(26,54,93);
+mso-border-bottom-alt:0.7500pt double rgb(26,54,93);
+border-left:1.0000pt double rgb(26,54,93);
+mso-border-left-alt:0.7500pt double rgb(26,54,93);
+padding:15pt 15pt 15pt 15pt ;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.18{
+mso-style-name:toc-table;
+margin-top:20.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.19{
+mso-style-name:cover-subject;
+margin-bottom:6.0000pt;
+text-indent:0.0000pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+color:rgb(26,54,93);
+font-weight:bold;
+text-transform:uppercase;
+font-size:14.0000pt;
+}
+
+p.20{
+mso-style-name:cover-subschool;
+margin-bottom:86.4000pt;
+text-indent:0.0000pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-weight:bold;
+text-transform:uppercase;
+font-size:12.0000pt;
+}
+
+p.21{
+mso-style-name:cover-info-table;
+margin-right:0.0000pt;
+margin-bottom:86.4000pt;
+margin-left:0.0000pt;
+padding:0pt 0pt 0pt 0pt ;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.22{
+mso-style-name:page-break;
+margin:0pt;
+margin-bottom:.0001pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.p{
+mso-style-name:"Normal \(Web\)";
+margin-top:0.0000pt;
+margin-right:0.0000pt;
+margin-bottom:4.0000pt;
+margin-left:0.0000pt;
+text-indent:36.0000pt;
+text-align:justify;
+text-justify:inter-ideograph;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.24{
+mso-style-name:cover-title;
+margin-bottom:108.0000pt;
+text-indent:0.0000pt;
+text-align:left;
+mso-line-height-alt:12pt;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+color:rgb(26,54,93);
+font-weight:bold;
+text-transform:uppercase;
+font-size:16.0000pt;
+}
+
+p.25{
+mso-style-name:cover-page;
+margin:0pt;
+margin-bottom:.0001pt;
+text-align:center;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.26{
+mso-style-name:cover-year;
+margin-top:21.6000pt;
+text-indent:0.0000pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-weight:bold;
+font-size:11.0000pt;
+}
+
+p.27{
+mso-style-name:cover-school;
+margin-bottom:2.2500pt;
+text-indent:0.0000pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-weight:bold;
+text-transform:uppercase;
+font-size:13.0000pt;
+}
+
+p.pre{
+mso-style-name:"HTML Preformatted";
+margin-top:4.0000pt;
+margin-bottom:8.0000pt;
+border-top:1.0000pt solid rgb(221,221,221);
+mso-border-top-alt:0.7500pt solid rgb(221,221,221);
+border-right:1.0000pt solid rgb(221,221,221);
+mso-border-right-alt:0.7500pt solid rgb(221,221,221);
+border-bottom:1.0000pt solid rgb(221,221,221);
+mso-border-bottom-alt:0.7500pt solid rgb(221,221,221);
+border-left:1.0000pt solid rgb(221,221,221);
+mso-border-left-alt:0.7500pt solid rgb(221,221,221);
+padding:4pt 4pt 4pt 4pt ;
+text-align:left;
+background:rgb(248,249,250);
+font-family:'Courier New';
+mso-fareast-font-family:SimSun;
+font-size:10.0000pt;
+}
+
+p.29{
+mso-style-name:toc-dots;
+margin:0pt;
+margin-bottom:.0001pt;
+border-bottom:1.0000pt dotted rgb(136,136,136);
+mso-border-bottom-alt:0.7500pt dotted rgb(136,136,136);
+padding:0pt 0pt 0pt 0pt ;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.30{
+mso-style-name:no-indent;
+margin:0pt;
+margin-bottom:.0001pt;
+text-indent:0.0000pt;
+text-align:left;
+font-family:Calibri;
+mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+span.msoIns{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:underline;
+text-underline:single;
+color:blue;
+}
+
+span.msoDel{
+mso-style-type:export-only;
+mso-style-name:"";
+text-decoration:line-through;
+color:red;
+}
+
+table.MsoNormalTable{
+mso-style-name:"Table Normal";
+mso-style-parent:"";
+mso-style-noshow:yes;
+mso-tstyle-rowband-size:0;
+mso-tstyle-colband-size:0;
+mso-padding-alt:0.0000pt 5.4000pt 0.0000pt 5.4000pt;
+mso-para-margin:0pt;
+mso-para-margin-bottom:.0001pt;
+mso-pagination:widow-orphan;
+font-family:'Times New Roman';
+font-size:10.0000pt;
+mso-ansi-language:#0400;
+mso-fareast-language:#0400;
+mso-bidi-language:#0400;
+}
+@page{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}@page Section0{
+margin-top:72.0000pt;
+margin-bottom:72.0000pt;
+margin-left:72.0000pt;
+margin-right:72.0000pt;
+size:595.3000pt 841.9000pt;
+mso-header-margin:36.0000pt;
+mso-footer-margin:36.0000pt;
+}
+div.Section0{page:Section0;}</style></head><body style="tab-interval:21pt;" ><!--StartFragment--><div class="Section0" ><p class=p  align=justify  style="margin-top:25.4000pt;margin-right:3.7500pt;margin-bottom:7.5000pt;
+margin-left:3.7500pt;text-indent:0.0000pt;mso-pagination:widow-orphan;
+text-align:justify;text-justify:inter-ideograph;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:12.0000pt;
+mso-font-kerning:0.0000pt;" >&#272;&#7872; T&#192;I:</span></b><b><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><p class=24  align=justify  style="margin-top:3.8000pt;margin-right:3.8000pt;margin-bottom:3.7500pt;
+margin-left:3.8000pt;mso-pagination:widow-orphan;text-align:justify;
+text-justify:inter-ideograph;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:16.0000pt;mso-font-kerning:0.0000pt;" >X&#226;y d&#7921;ng Web API qu&#7843;n l&#253; d&#7919; li&#7879;u c&#7843;m bi&#7871;n v&#224; phi&#234;n b&#7843;n &#7913;ng d&#7909;ng thi&#7871;t b&#7883; IoT s&#7917; d&#7909;ng .NET 10 & SQL Server</span></b><b><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';color:rgb(26,54,93);font-weight:bold;
+text-transform:uppercase;font-size:16.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><div align=center ><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:80.0000%;border:none;
+mso-border-left-alt:none;mso-border-top-alt:none;mso-border-right-alt:none;
+mso-border-bottom-alt:none;mso-padding-alt:0.7500pt 0.7500pt 0.7500pt 0.7500pt ;" ><tr><td width=45.0000%  valign=center  style="width:45.0000%;padding:3.0000pt 3.0000pt 3.0000pt 3.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >H&#7885;c vi&#234;n th&#7921;c hi&#7879;n:</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:3.0000pt 3.0000pt 3.0000pt 3.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:12.0000pt;mso-font-kerning:0.0000pt;" >V&#361; Xu&#226;n D&#7921; </span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:3.0000pt 3.0000pt 3.0000pt 3.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" >M&#227; h&#7885;c vi&#234;n:</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:3.0000pt 3.0000pt 3.0000pt 3.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:12.0000pt;mso-font-kerning:0.0000pt;" >20252731M</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr></table></div><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 align=center  style="padding:0pt 0pt 0pt 0pt ;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >M&#7908;C L&#7908;C</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><table class=MsoNormalTable  border=0  cellspacing=0  style="border-collapse:collapse;width:104.1600%;margin-left:5.4000pt;
+border:none;mso-padding-alt:0.7500pt 0.7500pt 0.7500pt 0.7500pt ;" ><tr><td width=81.5800%  valign=center  style="width:81.5800%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >1. M&#7908;C TI&#202;U V&#192; Y&#202;U C&#7846;U D&#7920; &#193;N</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 3</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >2. KI&#7870;N TR&#218;C H&#7878; TH&#7888;NG V&#192; C&#416; S&#7902; D&#7918; LI&#7878;U</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 3</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >2.1 Ki&#7871;n tr&#250;c h&#7879; th&#7889;ng t&#7893;ng quan</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 3</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >2.2 Thi&#7871;t k&#7871; chi ti&#7871;t c&#417; s&#7903; d&#7919; li&#7879;u quan h&#7879;</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 3</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >2.3 Danh m&#7909;c Web API Endpoints</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 4</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >3. GI&#7842;I PH&#193;P B&#7842;O M&#7852;T V&#192; T&#205;NH N&#258;NG AN TO&#192;N T&#205;CH H&#7906;P</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 5</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >3.1 C&#417; ch&#7871; ph&#242;ng ch&#7889;ng t&#7845;n c&#244;ng SQL Injection</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 5</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >3.2 C&#244; l&#7853;p v&#224; b&#7843;o m&#7853;t Database th&#244;ng qua Docker</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 5</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >3.3 Thi&#7871;t k&#7871; kh&#7843; n&#259;ng kh&#225;ng l&#7895;i k&#7871;t n&#7889;i (Connection Retry)</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 5</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 0.0000pt 4.5000pt 15.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >3.4 B&#7843;o m&#7853;t CORS v&#224; k&#234;nh truy&#7873;n HTTPS</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:4.5000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 6</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >4. &#272;&#431;&#7900;NG D&#7850;N M&#195; NGU&#7890;N D&#7920; &#193;N (GITHUB LINK)</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 6</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >5. QUY TR&#204;NH V&#7852;N H&#192;NH V&#192; KI&#7874;M TH&#7916; KH&#193;CH QUAN</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 7</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;mso-border-left-alt:none;
+border-right:none;mso-border-right-alt:none;border-top:none;
+mso-border-top-alt:none;border-bottom:none;mso-border-bottom-alt:none;" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >6. K&#7870;T LU&#7852;N V&#192; &#272;&#7882;NH H&#431;&#7898;NG T&#431;&#416;NG LAI</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td width=18.4000%  valign=center  style="width:18.4000%;padding:9.0000pt 0.0000pt 4.5000pt 0.0000pt ;border-left:none;
+mso-border-left-alt:none;border-right:none;mso-border-right-alt:none;
+border-top:none;mso-border-top-alt:none;border-bottom:none;
+mso-border-bottom-alt:none;" ><p class=MsoNormal  align=right  style="mso-pagination:widow-orphan;text-align:right;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trang 8</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr></table><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></b></h2><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >1. M&#7909;c ti&#234;u v&#224; Y&#234;u c&#7847;u d&#7921; &#225;n</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >B&#224;i t&#7853;p y&#234;u c&#7847;u x&#226;y d&#7921;ng Web API qu&#7843;n l&#253; d&#7919; li&#7879;u IoT v&#7899;i c&#225;c y&#234;u c&#7847;u c&#7909; th&#7875; sau:</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l2 level1 lfo1;" ><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >&#183;<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Thu th&#7853;p, l&#432;u tr&#7919; v&#224; qu&#7843;n l&#253; d&#7919; li&#7879;u c&#7843;m bi&#7871;n (nhi&#7879;t &#273;&#7897;, &#273;&#7897; &#7849;m) v&#224; th&#244;ng tin phi&#234;n b&#7843;n ph&#7847;n m&#7873;m c&#7911;a thi&#7871;t b&#7883; IoT.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l2 level1 lfo1;" ><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >&#183;<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Chuy&#7875;n &#273;&#7893;i h&#7879; th&#7889;ng c&#417; s&#7903; d&#7919; li&#7879;u l&#432;u tr&#7919; t&#7915; **MongoDB** (thi&#7871;t k&#7871; ban &#273;&#7847;u) sang **Microsoft SQL Server 2022** &#273;&#7875; &#273;&#225;p &#7913;ng y&#234;u c&#7847;u qu&#7843;n l&#253; d&#7919; li&#7879;u quan h&#7879; ch&#7863;t ch&#7869;.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l2 level1 lfo1;" ><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >&#183;<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Container h&#243;a c&#417; s&#7903; d&#7919; li&#7879;u v&#224; t&#7921; &#273;&#7897;ng h&#243;a quy tr&#236;nh c&#224;i &#273;&#7863;t, v&#7853;n h&#224;nh h&#7879; th&#7889;ng b&#7857;ng Docker.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >2. Ki&#7871;n tr&#250;c h&#7879; th&#7889;ng v&#224; C&#417; s&#7903; d&#7919; li&#7879;u</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >2.1 Ki&#7871;n tr&#250;c h&#7879; th&#7889;ng t&#7893;ng quan</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >H&#7879; th&#7889;ng bao g&#7891;m 3 th&#224;nh ph&#7847;n ch&#237;nh:</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l1 level1 lfo2;" ><![if !supportLists]><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >IoT Devices:</span></b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;G&#7917;i d&#7919; li&#7879;u &#273;o &#273;&#7841;c (JSON) l&#234;n API qua giao th&#7913;c HTTP v&#224; truy v&#7845;n c&#7853;p nh&#7853;t firmware.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l1 level1 lfo2;" ><![if !supportLists]><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >Web API (.NET 10):</span></b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;Ti&#7871;p nh&#7853;n HTTP requests, x&#7917; l&#253; nghi&#7879;p v&#7909; th&#244;ng qua l&#7899;p Services v&#224; truy xu&#7845;t c&#417; s&#7903; d&#7919; li&#7879;u b&#7857;ng Entity Framework Core 9.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l1 level1 lfo2;" ><![if !supportLists]><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >Database (SQL Server 2022):</span></b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;Ch&#7841;y c&#244; l&#7853;p b&#234;n trong Docker Container, &#273;&#7843;m b&#7843;o l&#432;u tr&#7919; v&#224; to&#224;n v&#7865;n d&#7919; li&#7879;u.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >2.2 Thi&#7871;t k&#7871; chi ti&#7871;t c&#417; s&#7903; d&#7919; li&#7879;u quan h&#7879;</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >C&#417; s&#7903; d&#7919; li&#7879;u </span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >WebAPIDemoDb</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;g&#7891;m 2 b&#7843;ng th&#244;ng tin:</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=30  align=justify  style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:4.0000pt;
+margin-left:0.0000pt;mso-pagination:widow-orphan;text-align:justify;
+text-justify:inter-ideograph;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >B&#7843;ng </span></b><b><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;" >SensorDatas</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >&nbsp;(Log d&#7919; li&#7879;u c&#7843;m bi&#7871;n):</span></b><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:100.0000%;margin-left:0.9000pt;
+border:none;mso-border-left-alt:0.7500pt solid rgb(0,0,0);mso-border-top-alt:0.7500pt solid rgb(0,0,0);
+mso-border-right-alt:0.7500pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);mso-padding-alt:0.7500pt 0.7500pt 0.7500pt 0.7500pt ;" ><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Tr&#432;&#7901;ng d&#7919; li&#7879;u</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Ki&#7875;u d&#7919; li&#7879;u</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >R&#224;ng bu&#7897;c</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >M&#244; t&#7843;</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Id</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >INT</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >PK, Identity</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Kh&#243;a ch&#237;nh t&#7921; t&#259;ng</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >DeviceId</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >NVARCHAR(100)</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Required, Max 100</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >M&#227; thi&#7871;t b&#7883; c&#7843;m bi&#7871;n</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Temperature</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >FLOAT</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Required</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Nhi&#7879;t &#273;&#7897; ghi nh&#7853;n</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Humidity</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >FLOAT</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Required</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >&#272;&#7897; &#7849;m ghi nh&#7853;n</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >CreatedAt</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >DATETIME2</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Default: GETDATE()</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Th&#7901;i &#273;i&#7875;m ghi nh&#7853;n log</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr></table><p class=30  align=justify  style="margin-top:0.0000pt;margin-right:0.0000pt;margin-bottom:4.0000pt;
+margin-left:0.0000pt;mso-pagination:widow-orphan;text-align:justify;
+text-justify:inter-ideograph;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >B&#7843;ng </span></b><b><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;" >AppVersions</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >&nbsp;(Phi&#234;n b&#7843;n ph&#7847;n m&#7873;m thi&#7871;t b&#7883;):</span></b><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><table class=MsoNormalTable  border=1  cellspacing=0  style="border-collapse:collapse;width:100.0000%;margin-left:0.9000pt;
+border:none;mso-border-left-alt:0.7500pt solid rgb(0,0,0);mso-border-top-alt:0.7500pt solid rgb(0,0,0);
+mso-border-right-alt:0.7500pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);mso-padding-alt:0.7500pt 0.7500pt 0.7500pt 0.7500pt ;" ><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Tr&#432;&#7901;ng d&#7919; li&#7879;u</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Ki&#7875;u d&#7919; li&#7879;u</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >R&#224;ng bu&#7897;c</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:1.0000pt solid rgb(0,0,0);
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);
+background:rgb(242,242,242);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >M&#244; t&#7843;</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Id</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >INT</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >PK, Identity</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Kh&#243;a ch&#237;nh t&#7921; t&#259;ng</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >DeviceId</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >NVARCHAR(100)</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Required, Max 100</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >M&#227; thi&#7871;t b&#7883; IoT</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Version</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >INT</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Required</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >S&#7889; hi&#7879;u phi&#234;n b&#7843;n ph&#7847;n m&#7873;m</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr><tr><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:1.0000pt solid rgb(0,0,0);mso-border-left-alt:0.7500pt solid rgb(0,0,0);
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" >UpdatedAt</span></b><b><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >DATETIME2</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  align=center  style="mso-pagination:widow-orphan;text-align:center;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Default: GETDATE()</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td><td valign=center  style="padding:4.5000pt 4.5000pt 4.5000pt 4.5000pt ;border-left:none;mso-border-left-alt:none;
+border-right:1.0000pt solid rgb(0,0,0);mso-border-right-alt:0.7500pt solid rgb(0,0,0);border-top:none;
+mso-border-top-alt:0.7500pt solid rgb(0,0,0);border-bottom:1.0000pt solid rgb(0,0,0);mso-border-bottom-alt:0.7500pt solid rgb(0,0,0);" ><p class=MsoNormal  style="mso-pagination:widow-orphan;text-align:left;mso-line-height-alt:12pt;" ><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" >Th&#7901;i &#273;i&#7875;m c&#7853;p nh&#7853;t</span><span style="font-family:'Times New Roman';mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-size:11.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></td></tr></table><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >2.3 Danh m&#7909;c Web API Endpoints</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >&#183;<span>&nbsp;</span></span></span><![endif]><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >Qu&#7843;n l&#253; Sensor Data:</span></b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo4;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >GET /api/SensorDatas</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: L&#7845;y danh s&#225;ch to&#224;n b&#7897; log c&#7843;m bi&#7871;n.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo4;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >GET /api/SensorDatas/{id}</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: L&#7845;y log chi ti&#7871;t theo ID.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo4;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >GET /api/SensorDatas/device/{deviceId}</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: L&#7845;y danh s&#225;ch log theo thi&#7871;t b&#7883;.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo4;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >POST /api/SensorDatas</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: Ghi nh&#7853;n log m&#7899;i (Body: DeviceId, Temperature, Humidity).</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo4;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >PUT /api/SensorDatas/{id}</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;/ </span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >DELETE /api/SensorDatas/{id}</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: C&#7853;p nh&#7853;t / X&#243;a log.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:36.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:Symbol;mso-fareast-font-family:SimSun;color:rgb(0,0,0);
+font-weight:bold;font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><span style='mso-list:Ignore;' >&#183;<span>&nbsp;</span></span></span><![endif]><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >Qu&#7843;n l&#253; App Version:</span></b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo5;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >GET /api/AppVersion</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;/ </span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >GET /api/AppVersion/{id}</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: L&#7845;y danh s&#225;ch / chi ti&#7871;t phi&#234;n b&#7843;n.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo5;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >POST /api/AppVersion</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: &#272;&#259;ng k&#253; phi&#234;n b&#7843;n m&#7899;i cho thi&#7871;t b&#7883;.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo5;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >GET /api/AppVersion/device/{deviceId}/latest</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: L&#7845;y phi&#234;n b&#7843;n m&#7899;i nh&#7845;t c&#7911;a m&#7897;t thi&#7871;t b&#7883; (Ph&#7909;c v&#7909; ki&#7875;m tra OTA).</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-top:5.0000pt;margin-bottom:5.0000pt;margin-left:72.0000pt;
+mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;text-indent:-18.0000pt;
+mso-pagination:widow-orphan;mso-line-height-alt:12pt;mso-list:l0 level2 lfo5;" ><![if !supportLists]><span style="font-family:'Courier New';color:rgb(0,0,0);font-size:10.0000pt;" ><span style='mso-list:Ignore;' >o<span>&nbsp;</span></span></span><![endif]><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >DELETE /api/AppVersion/{id}</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >: X&#243;a phi&#234;n b&#7843;n ph&#7847;n m&#7873;m.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >3. Gi&#7843;i ph&#225;p B&#7843;o m&#7853;t v&#224; T&#237;nh n&#259;ng An to&#224;n t&#237;ch h&#7907;p</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >D&#7921; &#225;n &#273;&#432;&#7907;c t&#237;ch h&#7907;p c&#225;c c&#417; ch&#7871; b&#7843;o m&#7853;t an to&#224;n h&#7879; th&#7889;ng c&#7889;t l&#245;i sau:</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >3.1 C&#417; ch&#7871; ph&#242;ng ch&#7889;ng t&#7845;n c&#244;ng SQL Injection</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >H&#7879; th&#7889;ng s&#7917; d&#7909;ng c&#244;ng ngh&#7879; ORM hi&#7879;n &#273;&#7841;i l&#224; </span><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >Entity Framework Core 9</span></b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >. M&#7885;i c&#226;u l&#7879;nh truy xu&#7845;t c&#417; s&#7903; d&#7919; li&#7879;u &#273;&#432;&#7907;c vi&#7871;t b&#7857;ng LINQ v&#224; t&#7921; &#273;&#7897;ng bi&#234;n d&#7883;ch th&#224;nh c&#225;c truy v&#7845;n c&#243; tham s&#7889; h&#243;a (Parameterized Queries). Do &#273;&#243;, d&#7919; li&#7879;u nh&#7853;p v&#224;o t&#7915; ng&#432;&#7901;i d&#249;ng ho&#7863;c thi&#7871;t b&#7883; IoT ch&#7881; &#273;&#243;ng vai tr&#242; l&#224; tham s&#7889; gi&#225; tr&#7883;, ng&#259;n ch&#7863;n ho&#224;n to&#224;n nguy c&#417; ch&#232;n m&#227; SQL tr&#225;i ph&#233;p.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >3.2 C&#244; l&#7853;p v&#224; b&#7843;o m&#7853;t Database th&#244;ng qua Docker</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >C&#417; s&#7903; d&#7919; li&#7879;u SQL Server 2022 &#273;&#432;&#7907;c ch&#7841;y c&#244; l&#7853;p trong m&#244;i tr&#432;&#7901;ng container Docker, thi&#7871;t l&#7853;p m&#7853;t kh&#7849;u t&#224;i kho&#7843;n h&#7879; tr&#7883; vi&#234;n SA c&#243; &#273;&#7897; ph&#7913;c t&#7841;p cao (</span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >YourStrong@Passw0rd</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >). C&#7893;ng m&#7841;ng 1433 c&#7911;a database ch&#7881; &#225;nh x&#7841; k&#7871;t n&#7889;i n&#7897;i b&#7897; gi&#7919;a c&#225;c container trong m&#7841;ng &#7843;o Docker, &#273;&#243;ng ho&#224;n to&#224;n v&#7899;i m&#244;i tr&#432;&#7901;ng internet b&#234;n ngo&#224;i &#273;&#7875; tr&#225;nh t&#7845;n c&#244;ng brute-force qu&#233;t c&#7893;ng.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >3.3 Thi&#7871;t k&#7871; kh&#7843; n&#259;ng kh&#225;ng l&#7895;i k&#7871;t n&#7889;i (Connection Retry)</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&#272;&#7875; tr&#225;nh vi&#7879;c &#7913;ng d&#7909;ng Web API b&#7883; treo ho&#7863;c crash khi kh&#7903;i ch&#7841;y &#273;&#7891;ng th&#7901;i c&#249;ng SQL Server (SQL Server c&#7847;n nhi&#7873;u th&#7901;i gian kh&#7903;i &#273;&#7897;ng h&#417;n), h&#7879; th&#7889;ng t&#237;ch h&#7907;p thu&#7853;t to&#225;n **Retry Connection** trong file </span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >Program.cs</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >. &#7912;ng d&#7909;ng s&#7869; th&#7921;c hi&#7879;n th&#7917; l&#7841;i k&#7871;t n&#7889;i database t&#7889;i &#273;a 10 l&#7847;n, m&#7895;i l&#7847;n c&#225;ch nhau 3 gi&#226;y tr&#432;&#7899;c khi b&#225;o l&#7895;i, &#273;&#7843;m b&#7843;o kh&#7843; n&#259;ng t&#7921; ph&#7909;c h&#7891;i h&#7879; th&#7889;ng khi c&#243; gi&#225;n &#273;o&#7841;n d&#7883;ch v&#7909; t&#7841;m th&#7901;i.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >3.4 B&#7843;o m&#7853;t CORS v&#224; k&#234;nh truy&#7873;n HTTPS</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Trong m&#244;i tr&#432;&#7901;ng ph&#225;t tri&#7875;n local, t&#237;nh n&#259;ng HTTPS v&#224; gi&#7899;i h&#7841;n CORS t&#7841;m th&#7901;i &#273;&#432;&#7907;c n&#7899;i l&#7887;ng &#273;&#7875; h&#7895; tr&#7907; ki&#7875;m th&#7917; t&#7915; c&#225;c thi&#7871;t b&#7883; nh&#250;ng IoT c&#7845;p th&#7845;p (v&#7889;n kh&#243; c&#7845;u h&#236;nh ch&#7913;ng ch&#7881; SSL t&#7921; k&#253;). Khi tri&#7875;n khai th&#7921;c t&#7871; tr&#234;n m&#244;i tr&#432;&#7901;ng Production, h&#7879; th&#7889;ng s&#7869; b&#7855;t bu&#7897;c ch&#7841;y sau m&#7897;t d&#7883;ch v&#7909; Reverse Proxy (nh&#432; Nginx/Cloudflare Tunnel) &#273;&#7875; b&#7843;o v&#7879; API b&#7857;ng HTTPS m&#227; h&#243;a k&#234;nh truy&#7873;n (TLS 1.3) v&#224; &#225;p d&#7909;ng c&#417; ch&#7871; x&#225;c th&#7921;c API Key/JWT ch&#7863;t ch&#7869;.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >4. &#272;&#432;&#7901;ng d&#7851;n m&#227; ngu&#7891;n d&#7921; &#225;n (Github Link)</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >M&#227; ngu&#7891;n to&#224;n b&#7897; d&#7921; &#225;n, bao g&#7891;m c&#7845;u h&#236;nh Docker Compose, m&#227; ngu&#7891;n Web API .NET 10, c&#225;c service k&#7871;t n&#7889;i c&#417; s&#7903; d&#7919; li&#7879;u v&#224; script ch&#7841;y t&#7921; &#273;&#7897;ng &#273;&#227; &#273;&#432;&#7907;c &#273;&#7849;y l&#234;n kho l&#432;u tr&#7919; tr&#7921;c tuy&#7871;n Github t&#7841;i &#273;&#7883;a ch&#7881;:</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=p  align=center  style="margin-top:15.0000pt;margin-bottom:15.0000pt;margin-left:0.0000pt;
+text-indent:0.0000pt;mso-pagination:widow-orphan;text-align:center;
+mso-line-height-alt:12pt;" ><span><a href="https://github.com/duvx/IoT-Sensor-WebAPI-Demo" ><b><u><span class="15"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-decoration:underline;
+text-underline:single;font-size:13.0000pt;" >https://github.com/duvx/IoT-Sensor-WebAPI-Demo</span></u></b></a></span><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >&nbsp;</span></b><b><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-weight:bold;font-size:12.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></p><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >5. Quy tr&#236;nh V&#7853;n h&#224;nh v&#224; Ki&#7875;m th&#7917;</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >5.1 Tri&#7875;n khai t&#7921; &#273;&#7897;ng b&#7857;ng start.sh</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" ><font face="Times New Roman" >&#7912;ng d&#7909;ng t&#237;ch h&#7907;p script </font></span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >start.sh</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;&#273;&#7875; t&#7921; &#273;&#7897;ng h&#243;a to&#224;n b&#7897; qu&#225; tr&#236;nh ch&#7841;y tr&#234;n Linux:</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ># Ph&#226;n quy&#7873;n th&#7921;c thi v&#224; ch&#7841;y script</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >chmod +x start.sh</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >./start.sh</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >Script s&#7869; th&#7921;c hi&#7879;n: Kh&#7903;i ch&#7841;y container SQL Server -&gt; Ki&#7875;m tra s&#7913;c kh&#7887;e (Healthcheck) container -&gt; Kh&#244;i ph&#7909;c c&#225;c th&#432; vi&#7879;n NuGet -&gt; Ch&#7841;y &#7913;ng d&#7909;ng t&#7841;i &#273;&#7883;a ch&#7881; </span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >http://localhost:5000</span><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >5.2 Ki&#7875;m th&#7917; API b&#7857;ng cURL</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ># 1. Th&#234;m Sensor Data m&#7899;i (POST)</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >curl -X POST http://localhost:5000/api/SensorDatas \</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;-H "Content-Type: application/json" \</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >&nbsp;&nbsp;-d '{"deviceId":"DEV_01","temperature":29.5,"humidity":68.0}'</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ># 2. L&#7845;y danh s&#225;ch Sensor Data (GET)</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >curl http://localhost:5000/api/SensorDatas</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ># 3. L&#7845;y phi&#234;n b&#7843;n firmware m&#7899;i nh&#7845;t c&#7911;a thi&#7871;t b&#7883; DEV_01 (GET)</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><p class=pre  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:10.0000pt;mso-font-kerning:0.0000pt;" >curl http://localhost:5000/api/AppVersion/device/DEV_01/latest</span><span style="mso-spacerun:'yes';font-family:'Courier New';mso-fareast-font-family:SimSun;
+font-size:10.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h3 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" >5.3 Giao di&#7879;n ki&#7875;m th&#7917; Swagger UI</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;font-size:13.0000pt;
+mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h3><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >H&#7879; th&#7889;ng t&#7921; &#273;&#7897;ng ph&#225;t sinh t&#224;i li&#7879;u Swagger tr&#7921;c quan t&#7841;i: </span><span class="16"  style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;" >http://localhost:5000/swagger</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p><h2 style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" >6. K&#7871;t lu&#7853;n v&#224; &#272;&#7883;nh h&#432;&#7899;ng t&#432;&#417;ng lai</span></b><b><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(26,54,93);font-weight:bold;text-transform:uppercase;
+font-size:14.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></b></h2><p class=p  style="mso-pagination:widow-orphan;mso-line-height-alt:12pt;" ><span style="mso-spacerun:'yes';font-family:'Times New Roman';mso-fareast-font-family:SimSun;
+color:rgb(0,0,0);font-size:13.0000pt;mso-font-kerning:0.0000pt;" >H&#7879; th&#7889;ng Web API IoT x&#226;y d&#7921;ng b&#7857;ng .NET 10 v&#224; SQL Server &#273;&#225;p &#7913;ng tr&#7885;n v&#7865;n y&#234;u c&#7847;u nghi&#7879;p v&#7909; l&#432;u tr&#7919; d&#7919; li&#7879;u c&#7843;m bi&#7871;n v&#224; phi&#234;n b&#7843;n firmware. Vi&#7879;c &#273;&#243;ng g&#243;i b&#7857;ng Docker gi&#250;p &#273;&#417;n gi&#7843;n h&#243;a kh&#226;u v&#7853;n h&#224;nh. Trong t&#432;&#417;ng lai, d&#7921; &#225;n &#273;&#7883;nh h&#432;&#7899;ng t&#237;ch h&#7907;p th&#234;m x&#225;c th&#7921;c &#273;a th&#224;nh ph&#7847;n (Multi-factor Authentication/OAuth2) cho thi&#7871;t b&#7883; &#273;&#7847;u cu&#7889;i v&#224; gi&#7899;i h&#7841;n t&#7847;n su&#7845;t y&#234;u c&#7847;u (Rate Limiting) &#273;&#7875; n&#226;ng cao to&#224;n di&#7879;n kh&#7843; n&#259;ng b&#7843;o m&#7853;t.</span><span style="mso-spacerun:'yes';font-family:Calibri;mso-fareast-font-family:SimSun;
+mso-bidi-font-family:'Times New Roman';font-size:12.0000pt;mso-font-kerning:0.0000pt;" ><o:p></o:p></span></p></div><!--EndFragment--></body></html>
