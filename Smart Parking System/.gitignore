@@ -1,0 +1,45 @@
+# === Java / Spring Boot ===
+backend/target/
+backend/.mvn/
+backend/*.jar
+backend/*.war
+*.class
+
+# === Flutter / Dart ===
+mobile/.dart_tool/
+mobile/.packages
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/android/.gradle/
+mobile/android/app/build/
+
+# === Node / React ===
+web/node_modules/
+web/dist/
+web/.cache/
+
+# === Docker ===
+docker/postgres/data/
+
+# === Environment & Secrets ===
+.env
+.env.local
+.env.production
+*.pem
+*.key
+!docker/certs/README.md
+
+# === IDE ===
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db

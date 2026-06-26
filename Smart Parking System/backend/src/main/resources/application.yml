@@ -1,0 +1,123 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-parking-backend
+
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:smartparking}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      idle-timeout: 30000
+      connection-timeout: 20000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      password: ${REDIS_PASSWORD:}
+      timeout: 5000
+
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
+      continue-on-error: true
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    default-property-inclusion: non_null
+
+# JWT Configuration
+jwt:
+  secret: ${JWT_SECRET:default-secret-key-change-in-production-must-be-at-least-256-bits-long-for-hs256}
+  access-token-expiration: 900000      # 15 minutes
+  refresh-token-expiration: 604800000  # 7 days
+
+# MQTT Configuration
+mqtt:
+  broker:
+    host: ${MQTT_HOST:localhost}
+    port: ${MQTT_PORT:1883}
+    username: ${MQTT_USERNAME:}
+    password: ${MQTT_PASSWORD:}
+  client:
+    id: smart-parking-backend
+  topics:
+    slot-status: parking/slots/+/status
+    gate-event: parking/gates/+/event
+    device-heartbeat: parking/devices/+/heartbeat
+
+# AES Encryption
+aes:
+  secret-key: ${AES_SECRET_KEY:0123456789abcdef0123456789abcdef}
+
+# Parking Configuration
+parking:
+  price-per-hour: 5000  # VND
+
+# Springdoc OpenAPI
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+
+---
+# Development Profile
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  devtools:
+    restart:
+      enabled: true
+
+logging:
+  level:
+    com.smartparking: DEBUG
+    org.springframework.security: DEBUG
+
+---
+# Production Profile
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+  sql:
+    init:
+      mode: never
+
+logging:
+  level:
+    com.smartparking: INFO
+    org.springframework.security: WARN

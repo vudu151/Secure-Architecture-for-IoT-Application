@@ -1,0 +1,153 @@
+# =============================================================================
+# Mosquitto ACL (Access Control List)
+# Smart Parking System
+# =============================================================================
+# Username source:
+#   - Port 1883: anonymous (no username) → matches anonymous ACL
+#   - Port 8883: certificate CN via use_identity_as_username
+#
+# Topic Structure:
+#   parking/slots/{slot_id}/status     - ESP32 publishes occupancy status
+#   parking/slots/{slot_id}/command    - Backend sends LED commands to ESP32
+#   parking/gates/{gate_id}/event      - RPi publishes gate events (plate, QR)
+#   parking/gates/{gate_id}/control    - Backend sends open/close to RPi
+#   parking/devices/{device_id}/heartbeat - All devices publish heartbeats
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# Anonymous access (Port 1883 - Backend service within Docker network)
+# ---------------------------------------------------------------------------
+# Backend has full read/write access to all topics
+topic readwrite #
+
+# ---------------------------------------------------------------------------
+# ESP32 Devices - Zone A (Slots A01-A10)
+# ---------------------------------------------------------------------------
+# Each ESP32 can only write to its own slot status topic
+# and read commands for its own slot.
+
+user esp32_slot_a01
+topic write parking/slots/a01/status
+topic read parking/slots/a01/command
+topic write parking/devices/esp32_slot_a01/heartbeat
+
+user esp32_slot_a02
+topic write parking/slots/a02/status
+topic read parking/slots/a02/command
+topic write parking/devices/esp32_slot_a02/heartbeat
+
+user esp32_slot_a03
+topic write parking/slots/a03/status
+topic read parking/slots/a03/command
+topic write parking/devices/esp32_slot_a03/heartbeat
+
+user esp32_slot_a04
+topic write parking/slots/a04/status
+topic read parking/slots/a04/command
+topic write parking/devices/esp32_slot_a04/heartbeat
+
+user esp32_slot_a05
+topic write parking/slots/a05/status
+topic read parking/slots/a05/command
+topic write parking/devices/esp32_slot_a05/heartbeat
+
+user esp32_slot_a06
+topic write parking/slots/a06/status
+topic read parking/slots/a06/command
+topic write parking/devices/esp32_slot_a06/heartbeat
+
+user esp32_slot_a07
+topic write parking/slots/a07/status
+topic read parking/slots/a07/command
+topic write parking/devices/esp32_slot_a07/heartbeat
+
+user esp32_slot_a08
+topic write parking/slots/a08/status
+topic read parking/slots/a08/command
+topic write parking/devices/esp32_slot_a08/heartbeat
+
+user esp32_slot_a09
+topic write parking/slots/a09/status
+topic read parking/slots/a09/command
+topic write parking/devices/esp32_slot_a09/heartbeat
+
+user esp32_slot_a10
+topic write parking/slots/a10/status
+topic read parking/slots/a10/command
+topic write parking/devices/esp32_slot_a10/heartbeat
+
+# ---------------------------------------------------------------------------
+# ESP32 Devices - Zone B (Slots B01-B10)
+# ---------------------------------------------------------------------------
+
+user esp32_slot_b01
+topic write parking/slots/b01/status
+topic read parking/slots/b01/command
+topic write parking/devices/esp32_slot_b01/heartbeat
+
+user esp32_slot_b02
+topic write parking/slots/b02/status
+topic read parking/slots/b02/command
+topic write parking/devices/esp32_slot_b02/heartbeat
+
+user esp32_slot_b03
+topic write parking/slots/b03/status
+topic read parking/slots/b03/command
+topic write parking/devices/esp32_slot_b03/heartbeat
+
+user esp32_slot_b04
+topic write parking/slots/b04/status
+topic read parking/slots/b04/command
+topic write parking/devices/esp32_slot_b04/heartbeat
+
+user esp32_slot_b05
+topic write parking/slots/b05/status
+topic read parking/slots/b05/command
+topic write parking/devices/esp32_slot_b05/heartbeat
+
+user esp32_slot_b06
+topic write parking/slots/b06/status
+topic read parking/slots/b06/command
+topic write parking/devices/esp32_slot_b06/heartbeat
+
+user esp32_slot_b07
+topic write parking/slots/b07/status
+topic read parking/slots/b07/command
+topic write parking/devices/esp32_slot_b07/heartbeat
+
+user esp32_slot_b08
+topic write parking/slots/b08/status
+topic read parking/slots/b08/command
+topic write parking/devices/esp32_slot_b08/heartbeat
+
+user esp32_slot_b09
+topic write parking/slots/b09/status
+topic read parking/slots/b09/command
+topic write parking/devices/esp32_slot_b09/heartbeat
+
+user esp32_slot_b10
+topic write parking/slots/b10/status
+topic read parking/slots/b10/command
+topic write parking/devices/esp32_slot_b10/heartbeat
+
+# ---------------------------------------------------------------------------
+# Raspberry Pi Gate Controllers
+# ---------------------------------------------------------------------------
+# Each RPi can only write events for its own gate
+# and read control commands for its own gate.
+
+user rpi_gate1
+topic write parking/gates/gate1/event
+topic read parking/gates/gate1/control
+topic write parking/devices/rpi_gate1/heartbeat
+
+user rpi_gate2
+topic write parking/gates/gate2/event
+topic read parking/gates/gate2/control
+topic write parking/devices/rpi_gate2/heartbeat
+
+# ---------------------------------------------------------------------------
+# Backend client certificate (if connecting via TLS port 8883)
+# ---------------------------------------------------------------------------
+user smartparking-backend
+topic readwrite #
