@@ -17,7 +17,7 @@ export const adminApi = {
     axiosInstance.get(`/admin/users/${id}`),
 
   toggleUserActive: (id) =>
-    axiosInstance.patch(`/admin/users/${id}/toggle-active`),
+    axiosInstance.put(`/admin/users/${id}/toggle-active`),
 
   // Devices
   getDevices: (params) =>
@@ -28,7 +28,7 @@ export const adminApi = {
 
   // Gate Control
   controlGate: (gateId, action) =>
-    axiosInstance.post(`/admin/gates/${gateId}/control`, { action }),
+    axiosInstance.post(`/admin/gate/${gateId}/control`, { action }),
 
   getGateStatus: () =>
     axiosInstance.get('/admin/gates/status'),

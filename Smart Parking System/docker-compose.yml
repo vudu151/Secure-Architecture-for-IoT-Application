@@ -28,6 +28,7 @@ services:
       - ./docker/postgres/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
     networks:
       - backend-net
+      - frontend-net
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-smartparking} -d ${POSTGRES_DB:-smartparking}"]
       interval: 10s
@@ -153,7 +154,8 @@ services:
       SPRING_DATA_REDIS_PASSWORD: ${REDIS_PASSWORD:-redis_secret_password}
 
       # MQTT
-      MQTT_BROKER_URL: tcp://mosquitto:1883
+      MQTT_HOST: mosquitto
+      MQTT_PORT: 1883
       MQTT_CLIENT_ID: ${MQTT_BACKEND_CLIENT_ID:-smartparking-backend}
 
       # JWT

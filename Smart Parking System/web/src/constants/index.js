@@ -1,6 +1,13 @@
 // API & WebSocket URLs
-export const API_BASE_URL = 'http://localhost:8080/api/v1';
-export const WS_URL = 'http://localhost:8080/ws';
+const isProd = import.meta.env.PROD;
+
+export const API_BASE_URL = isProd 
+  ? '/api/v1' 
+  : 'http://localhost:8080/api/v1';
+
+export const WS_URL = isProd 
+  ? `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws` 
+  : 'http://localhost:8080/ws';
 
 // Parking Slot Statuses
 export const SLOT_STATUS = {
