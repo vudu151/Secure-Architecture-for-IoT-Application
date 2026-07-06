@@ -1,0 +1,8 @@
+# PlatformIO build artifacts (workspace-local)
+.pio/
+
+# Production certificate private key — NEVER commit to git!
+# Generate with: bash docker/certs/generate_certs.sh
+src/certs/client_key.h
+src/certs/client_cert.h
+src/certs/ca_cert.h

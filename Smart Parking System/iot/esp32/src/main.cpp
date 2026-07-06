@@ -1,14 +1,25 @@
 #include <Arduino.h>
 #include <WiFi.h>
-#include <WiFiClientSecure.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
-#include "certificates.h"
 #include "config.h"
 
-// --- Global Variables ---
-WiFiClientSecure secureClient;
-PubSubClient mqttClient(secureClient);
+// ======================================================================
+// Transport layer: WiFiClientSecure (mTLS) in production,
+//                  plain WiFiClient (no TLS) in Wokwi dev mode.
+// ======================================================================
+#ifdef PRODUCTION_MODE
+    #include <WiFiClientSecure.h>
+    #include "certs/ca_cert.h"      // CA certificate (Mosquitto root CA)
+    #include "certs/client_cert.h" // Client certificate (device identity)
+    #include "certs/client_key.h"  // Client private key
+    WiFiClientSecure secureClient;
+    PubSubClient mqttClient(secureClient);
+#else
+    #include <WiFiClient.h>
+    WiFiClient plainClient;
+    PubSubClient mqttClient(plainClient);
+#endif
 
 // Servo control variables using ESP32 LEDC (PWM)
 const int servoChannel = 0;
@@ -76,8 +87,8 @@ void setupWiFi() {
 }
 
 void publishSlotStatus(bool occupied) {
-    char topic[60];
-    sprintf(topic, "parking/slots/%s/status", SLOT_CODE);
+    char topic[80];
+    sprintf(topic, "%s/parking/slots/%s/status", TOPIC_PREFIX, SLOT_CODE);
 
     JsonDocument doc;
     doc["slotCode"] = SLOT_CODE;
@@ -98,8 +109,8 @@ void publishSlotStatus(bool occupied) {
 }
 
 void sendHeartbeat() {
-    char topic[80];
-    sprintf(topic, "parking/devices/esp32_slot_%s/heartbeat", SLOT_CODE);
+    char topic[100];
+    sprintf(topic, "%s/parking/devices/esp32_slot_%s/heartbeat", TOPIC_PREFIX, SLOT_CODE);
 
     JsonDocument doc;
     doc["deviceUid"] = String("esp32_slot_") + SLOT_CODE;
@@ -134,10 +145,10 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
     }
 
     String topicStr = String(topic);
-    char slotCmdTopic[60];
-    sprintf(slotCmdTopic, "parking/slots/%s/command", SLOT_CODE);
-    char gateCtrlTopic[60];
-    sprintf(gateCtrlTopic, "parking/gates/%s/control", GATE_ID);
+    char slotCmdTopic[80];
+    sprintf(slotCmdTopic, "%s/parking/slots/%s/command", TOPIC_PREFIX, SLOT_CODE);
+    char gateCtrlTopic[80];
+    sprintf(gateCtrlTopic, "%s/parking/gates/%s/control", TOPIC_PREFIX, GATE_ID);
 
     if (topicStr == slotCmdTopic) {
         // LED commands: {"color": "RED"/"GREEN"/"YELLOW"}
@@ -147,15 +158,13 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
         if (color == "GREEN") {
             digitalWrite(LED_GREEN_PIN, HIGH);
             digitalWrite(LED_RED_PIN, LOW);
-            digitalWrite(LED_YELLOW_PIN, LOW);
         } else if (color == "RED") {
             digitalWrite(LED_GREEN_PIN, LOW);
             digitalWrite(LED_RED_PIN, HIGH);
-            digitalWrite(LED_YELLOW_PIN, LOW);
         } else if (color == "YELLOW") {
+            // Reserved: turn off both green and red LEDs
             digitalWrite(LED_GREEN_PIN, LOW);
             digitalWrite(LED_RED_PIN, LOW);
-            digitalWrite(LED_YELLOW_PIN, HIGH);
         }
     } else if (topicStr == gateCtrlTopic) {
         // Gate control commands: {"action": "OPEN"/"CLOSE"}
@@ -186,15 +195,15 @@ void reconnectMQTT() {
             Serial.println("Connected to Mosquitto Broker successfully via mTLS!");
             
             // Subscribe to LED command topic
-            char slotCmdTopic[60];
-            sprintf(slotCmdTopic, "parking/slots/%s/command", SLOT_CODE);
+            char slotCmdTopic[80];
+            sprintf(slotCmdTopic, "%s/parking/slots/%s/command", TOPIC_PREFIX, SLOT_CODE);
             mqttClient.subscribe(slotCmdTopic, 1);
             Serial.print("Subscribed to: ");
             Serial.println(slotCmdTopic);
 
             // Subscribe to Gate control topic
-            char gateCtrlTopic[60];
-            sprintf(gateCtrlTopic, "parking/gates/%s/control", GATE_ID);
+            char gateCtrlTopic[80];
+            sprintf(gateCtrlTopic, "%s/parking/gates/%s/control", TOPIC_PREFIX, GATE_ID);
             mqttClient.subscribe(gateCtrlTopic, 1);
             Serial.print("Subscribed to: ");
             Serial.println(gateCtrlTopic);
@@ -240,12 +249,10 @@ void setup() {
     pinMode(ECHO_PIN, INPUT);
     pinMode(LED_GREEN_PIN, OUTPUT);
     pinMode(LED_RED_PIN, OUTPUT);
-    pinMode(LED_YELLOW_PIN, OUTPUT);
 
     // Initial LED State: Green on (trống)
     digitalWrite(LED_GREEN_PIN, HIGH);
     digitalWrite(LED_RED_PIN, LOW);
-    digitalWrite(LED_YELLOW_PIN, LOW);
 
     // Config LEDC for Servo Control
     ledcSetup(servoChannel, servoFreq, servoResolution);
@@ -254,10 +261,16 @@ void setup() {
 
     setupWiFi();
 
-    // Configure client certificates for mTLS connection
-    secureClient.setCACert(ca_cert);
-    secureClient.setCertificate(client_cert);
-    secureClient.setPrivateKey(client_key);
+#ifdef PRODUCTION_MODE
+    // mTLS: load device certificate + private key + CA certificate
+    // Certificates are generated by docker/certs/generate_certs.sh
+    secureClient.setCACert(ca_cert_pem);
+    secureClient.setCertificate(client_cert_pem);
+    secureClient.setPrivateKey(client_key_pem);
+    Serial.println("[mTLS] Certificates loaded — connecting to Mosquitto");
+#else
+    Serial.println("[DEV] Plain TCP — connecting to public HiveMQ broker");
+#endif
 
     mqttClient.setServer(MQTT_HOST, MQTT_PORT);
     mqttClient.setCallback(mqttCallback);
@@ -302,11 +315,9 @@ void loop() {
                 if (currentOccupiedState) {
                     digitalWrite(LED_GREEN_PIN, LOW);
                     digitalWrite(LED_RED_PIN, HIGH);
-                    digitalWrite(LED_YELLOW_PIN, LOW);
                 } else {
                     digitalWrite(LED_GREEN_PIN, HIGH);
                     digitalWrite(LED_RED_PIN, LOW);
-                    digitalWrite(LED_YELLOW_PIN, LOW);
                 }
             }
         }

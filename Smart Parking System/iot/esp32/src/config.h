@@ -1,15 +1,36 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
+// ======================================================================
+// PRODUCTION_MODE is injected by platformio.ini [env:production]
+// When NOT defined → Wokwi simulation mode (HiveMQ, no TLS)
+// When     defined → Real hardware mode (Mosquitto, mTLS)
+// ======================================================================
+
 // --- WiFi Settings ---
-#define WIFI_SSID       "Your_WiFi_SSID"
-#define WIFI_PASSWORD   "Your_WiFi_Password"
+#ifdef PRODUCTION_MODE
+    // Injected from platformio.ini build_flags via -D REAL_WIFI_SSID=\"...\"
+    #define WIFI_SSID       REAL_WIFI_SSID
+    #define WIFI_PASSWORD   REAL_WIFI_PASSWORD
+#else
+    // Wokwi "magic" SSID — provides internet access inside the simulator
+    #define WIFI_SSID       "Wokwi-GUEST"
+    #define WIFI_PASSWORD   ""
+#endif
 
 // --- MQTT Settings ---
-// Note: Use your computer's local IP address (e.g. 192.168.1.X) where Docker is running.
-// Do NOT use "localhost" or "127.0.0.1" as it refers to the ESP32 itself.
-#define MQTT_HOST       "192.168.1.100" 
-#define MQTT_PORT       8883 // mTLS Port
+#ifdef PRODUCTION_MODE
+    // Injected from platformio.ini build_flags via -D REAL_MQTT_HOST=\"...\"
+    #define MQTT_HOST       REAL_MQTT_HOST
+    #define MQTT_PORT       REAL_MQTT_PORT
+    #define TOPIC_PREFIX    "parking"   // No prefix needed on private broker
+#else
+    // Public HiveMQ broker — free, no auth, no TLS (dev/simulation only)
+    #define MQTT_HOST       "broker.hivemq.com"
+    #define MQTT_PORT       1883
+    // Unique prefix to avoid topic collision with other users on HiveMQ
+    #define TOPIC_PREFIX    "smartpkg"
+#endif
 
 // --- Device Configuration ---
 #define SLOT_CODE       "A01"
@@ -24,7 +45,6 @@
 // Status Indicator LEDs
 #define LED_GREEN_PIN   19  // Available
 #define LED_RED_PIN     21  // Occupied
-#define LED_YELLOW_PIN  22  // Reserved
 
 // Barrier Simulator (SG90 Servo)
 #define SERVO_PIN       23

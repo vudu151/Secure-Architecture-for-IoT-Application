@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "author": "Smart Parking System - ESP32 Slot Simulator",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 100,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "hcsr1",
+      "top": -80,
+      "left": 190,
+      "attrs": { "distance": "50" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": -120,
+      "left": -190,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": -50,
+      "left": -190,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_red",
+      "top": -85,
+      "left": -230,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_green",
+      "top": -15,
+      "left": -230,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+
+    [ "hcsr1:TRIG", "esp:5",  "orange", [ "v0" ] ],
+    [ "hcsr1:ECHO", "esp:18", "purple", [ "v0" ] ],
+    [ "hcsr1:VCC",  "esp:5V", "red",    [ "v-19.2", "h-96", "v182.4" ] ],
+    [ "hcsr1:GND",  "esp:GND.1", "black", [ "v-28.8", "h-105.6", "v192" ] ],
+
+    [ "led_red:A",  "esp:21",    "red",   [ "v0" ] ],
+    [ "led_red:C",  "r_red:1",   "red",   [ "v19.2", "h-28.8" ] ],
+    [ "r_red:2",    "esp:GND.2", "black", [ "h76.65", "v96", "h86.4" ] ],
+
+    [ "led_green:A",  "esp:19",    "green",  [ "v0" ] ],
+    [ "led_green:C",  "r_green:1", "green",  [ "v19.2", "h-28.8" ] ],
+    [ "r_green:2",    "esp:GND.2", "black",  [ "h76.65", "v28", "h86.4" ] ]
+  ],
+  "dependencies": {}
+}
