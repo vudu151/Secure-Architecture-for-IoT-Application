@@ -30,6 +30,8 @@ docker/postgres/data/
 .env.production
 *.pem
 *.key
+*.crt
+*.srl
 !docker/certs/README.md
 
 # === IDE ===
@@ -43,3 +45,6 @@ docker/postgres/data/
 # === OS ===
 .DS_Store
 Thumbs.db
+
+venv
+__pycache__
