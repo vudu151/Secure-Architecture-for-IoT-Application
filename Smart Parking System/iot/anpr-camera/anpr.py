@@ -43,12 +43,14 @@ class ANPREngine:
 
     def detect_and_recognize(self, frame) -> tuple[str | None, float]:
         plate_crop = self._detect_plate(frame)
-        if plate_crop is None:
-            return None, 0.0
-        return self._recognize_text(plate_crop)
+        if plate_crop is not None:
+            result = self._recognize_text(plate_crop)
+            if result[0]:
+                return result
+        return self._recognize_text(frame)
 
     def _detect_plate(self, frame):
-        results = self.model.predict(frame, conf=0.4, verbose=False)
+        results = self.model.predict(frame, conf=0.1, verbose=False)
         if not results or results[0].boxes is None or len(results[0].boxes) == 0:
             return None
 
@@ -58,8 +60,10 @@ class ANPREngine:
         x1, y1, x2, y2 = boxes.xyxy[best_idx].cpu().numpy().astype(int)
 
         h, w = frame.shape[:2]
-        x1, y1 = max(0, x1), max(0, y1)
-        x2, y2 = min(w, x2), min(h, y2)
+        pad_x = int((x2 - x1) * 0.2)
+        pad_y = int((y2 - y1) * 0.2)
+        x1, y1 = max(0, x1 - pad_x), max(0, y1 - pad_y)
+        x2, y2 = min(w, x2 + pad_x), min(h, y2 + pad_y)
 
         crop = frame[y1:y2, x1:x2]
         if crop.size == 0:
@@ -70,21 +74,61 @@ class ANPREngine:
         if crop is None or crop.size == 0:
             return None, 0.0
 
-        gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
-        if gray.shape[0] < 50:
-            gray = cv2.resize(
-                gray, (0, 0), fx=2.0, fy=2.0, interpolation=cv2.INTER_CUBIC
+        # Enlarge the image if it is too small
+        target_height = 100
+        if crop.shape[0] < target_height:
+            scale = target_height / crop.shape[0]
+            crop = cv2.resize(
+                crop, (0, 0), fx=scale, fy=scale, interpolation=cv2.INTER_CUBIC
             )
 
-        results = self.reader.readtext(gray)
+        gray = cv2.cvtColor(crop, cv2.COLOR_BGR2GRAY)
+
+        # Apply Bilateral Filter to reduce noise but keep edges sharp
+        blur = cv2.bilateralFilter(gray, 11, 17, 17)
+
+        # Apply CLAHE to improve contrast for OCR
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(blur)
+
+        # Restrict characters to uppercase letters, digits, and standard plate punctuation
+        allowlist = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-."
+        results = self.reader.readtext(enhanced, allowlist=allowlist, paragraph=False)
         if not results:
             return None, 0.0
 
-        results = sorted(results, key=lambda r: r[0][0][0])
-        full_text, total_conf = "", 0.0
-        for _, text, conf in results:
-            full_text += "".join(c for c in text if c.isalnum()).upper()
-            total_conf += conf
+        # Detect 2-row plates by checking vertical spread of OCR bounding boxes
+        centers_y = [((r[0][0][1] + r[0][2][1]) / 2) for r in results]
+        y_span = max(centers_y) - min(centers_y) if len(centers_y) > 1 else 0
+        crop_h = crop.shape[0]
 
+        if y_span > crop_h * 0.3:
+            median_y = (max(centers_y) + min(centers_y)) / 2
+            top_row = sorted(
+                [r for r, cy in zip(results, centers_y) if cy <= median_y],
+                key=lambda r: r[0][0][0],
+            )
+            bot_row = sorted(
+                [r for r, cy in zip(results, centers_y) if cy > median_y],
+                key=lambda r: r[0][0][0],
+            )
+
+            def extract(row):
+                return "".join(
+                    "".join(c for c in r[1] if c.isalnum() or c in "-.").upper()
+                    for r in row
+                )
+
+            top_text = extract(top_row)
+            bot_text = extract(bot_row)
+            full_text = f"{top_text}-{bot_text}" if top_text and bot_text else top_text or bot_text
+        else:
+            results = sorted(results, key=lambda r: r[0][0][0])
+            full_text = "".join(
+                "".join(c for c in text if c.isalnum() or c in "-.").upper()
+                for _, text, _ in results
+            )
+
+        total_conf = sum(r[2] for r in results)
         avg_conf = total_conf / len(results)
         return full_text.strip() or None, avg_conf

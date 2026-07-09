@@ -42,6 +42,22 @@ services:
     networks:
       - mock-net
 
+  node-red:
+    image: nodered/node-red:latest
+    container_name: mock-dashboard
+    ports:
+      - "1880:1880"
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    volumes:
+      - ./docker/node-red/flows.json:/data/flows.json
+      - ./docker/node-red/package.json:/data/package.json
+    depends_on:
+      - mosquitto
+      - qr-scanner
+    networks:
+      - mock-net
+
 networks:
   mock-net:
     driver: bridge
