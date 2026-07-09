@@ -1,0 +1,328 @@
+[
+    {
+        "id": "tab-parking",
+        "type": "tab",
+        "label": "Smart Parking Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "mqtt-in-event",
+        "type": "mqtt in",
+        "z": "tab-parking",
+        "name": "plate_detected",
+        "topic": "parking/gates/gate1/event",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "config-mqtt-broker",
+        "x": 130,
+        "y": 250,
+        "wires": [
+            [
+                "fn-parse-event"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt-in-gate",
+        "type": "mqtt in",
+        "z": "tab-parking",
+        "name": "gate/control",
+        "topic": "parking/gates/gate1/control",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "config-mqtt-broker",
+        "x": 130,
+        "y": 350,
+        "wires": [
+            [
+                "fn-parse-gate"
+            ]
+        ]
+    },
+    {
+        "id": "fn-parse-event",
+        "type": "function",
+        "z": "tab-parking",
+        "name": "Parse Plate Event",
+        "func": "var data = msg.payload;\nflow.set('lastPlate', data.plate || 'N/A');\nflow.set('lastConfidence', (data.confidence * 100).toFixed(0) + '%');\n\nvar ts = data.timestamp || '';\nif (ts) {\n    try {\n        var d = new Date(ts);\n        ts = d.toLocaleString('en-GB', { timeZone: 'Asia/Ho_Chi_Minh' });\n    } catch(e) {}\n}\n\nflow.set('lastTimestamp', ts);\nflow.set('lastImageUrl', data.image_url || '');\n\nvar out1 = { payload: data.plate || 'N/A' };\nvar out2 = { payload: (data.confidence * 100).toFixed(0) + '%' };\nvar out3 = { payload: ts };\nvar out4 = { payload: 'SUCCESS' };\n\nreturn [out1, out2, out3, out4];",
+        "outputs": 4,
+        "x": 380,
+        "y": 250,
+        "wires": [
+            [
+                "ui-plate-text"
+            ],
+            [
+                "ui-confidence-text"
+            ],
+            [
+                "ui-timestamp-text"
+            ],
+            [
+                "ui-status-text",
+                "ui-gate-status"
+            ]
+        ]
+    },
+    {
+        "id": "fn-parse-gate",
+        "type": "function",
+        "z": "tab-parking",
+        "name": "Parse Gate Command",
+        "func": "var raw = msg.payload;\nif (typeof raw === 'string') {\n    msg.payload = raw;\n} else {\n    msg.payload = JSON.stringify(raw);\n}\nreturn msg;",
+        "outputs": 1,
+        "x": 380,
+        "y": 350,
+        "wires": [
+            [
+                "ui-gate-status"
+            ]
+        ]
+    },
+    {
+        "id": "ui-plate-text",
+        "type": "ui_text",
+        "z": "tab-parking",
+        "group": "grp-result",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "name": "Detected Plate",
+        "label": "License Plate:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 650,
+        "y": 210,
+        "wires": []
+    },
+    {
+        "id": "ui-confidence-text",
+        "type": "ui_text",
+        "z": "tab-parking",
+        "group": "grp-result",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "name": "Confidence",
+        "label": "Confidence:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 650,
+        "y": 250,
+        "wires": []
+    },
+    {
+        "id": "ui-timestamp-text",
+        "type": "ui_text",
+        "z": "tab-parking",
+        "group": "grp-result",
+        "order": 3,
+        "width": 7,
+        "height": 1,
+        "name": "Timestamp",
+        "label": "Timestamp:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 650,
+        "y": 290,
+        "wires": []
+    },
+    {
+        "id": "ui-status-text",
+        "type": "ui_text",
+        "z": "tab-parking",
+        "group": "grp-result",
+        "order": 4,
+        "width": 7,
+        "height": 1,
+        "name": "Status",
+        "label": "Status:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 650,
+        "y": 170,
+        "wires": []
+    },
+    {
+        "id": "ui-gate-status",
+        "type": "ui_template",
+        "z": "tab-parking",
+        "group": "grp-gate",
+        "name": "Gate Animation",
+        "order": 1,
+        "width": 12,
+        "height": 5,
+        "format": "<div class=\"gate-container\">\n    <div class=\"gate-status-text\">\n        Gate Status: <span id=\"gate-text\" style=\"font-weight: bold; color: #f44336;\">CLOSED</span>\n    </div>\n    <div class=\"barrier-wrapper\">\n        <div id=\"car-element\" class=\"car-element\">\ud83d\ude97</div>\n        <div class=\"barrier-base\"></div>\n        <div id=\"barrier-arm\" class=\"barrier-arm closed\">\n            <div class=\"stripe\"></div><div class=\"stripe\"></div><div class=\"stripe\"></div>\n            <div class=\"stripe\"></div><div class=\"stripe\"></div><div class=\"stripe\"></div>\n            <div class=\"stripe\"></div><div class=\"stripe\"></div><div class=\"stripe\"></div>\n        </div>\n    </div>\n</div>\n\n<style>\n.gate-container {\n    padding: 20px;\n    background: #f9f9f9;\n    border-radius: 8px;\n    text-align: center;\n    overflow: hidden;\n    height: 100%;\n    box-sizing: border-box;\n}\n.gate-status-text {\n    font-size: 18px;\n    margin-bottom: 20px;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n}\n.barrier-wrapper {\n    position: relative;\n    height: 140px;\n    display: flex;\n    align-items: flex-end;\n    justify-content: center;\n}\n.barrier-base {\n    width: 30px;\n    height: 60px;\n    background-color: #555;\n    border-radius: 4px 4px 0 0;\n    position: absolute;\n    bottom: 0;\n    left: calc(50% - 100px);\n    z-index: 2;\n    box-shadow: inset 2px 2px 5px rgba(255,255,255,0.2), 2px 0 5px rgba(0,0,0,0.5);\n}\n.barrier-arm {\n    width: 250px;\n    height: 18px;\n    background-color: #f44336;\n    position: absolute;\n    bottom: 45px;\n    left: calc(50% - 100px);\n    transform-origin: 15px 9px;\n    border-radius: 0 8px 8px 0;\n    transition: transform 1.5s ease-in-out, background-color 0.5s;\n    display: flex;\n    overflow: hidden;\n    z-index: 1;\n    box-shadow: 0 4px 6px rgba(0,0,0,0.3);\n}\n.barrier-arm.open {\n    transform: rotate(-90deg);\n    background-color: #4CAF50;\n}\n.barrier-arm.closed {\n    transform: rotate(0deg);\n    background-color: #f44336;\n}\n.stripe {\n    min-width: 25px;\n    height: 100%;\n    background-color: #fff;\n    transform: skewX(-45deg);\n    margin-left: 15px;\n}\n.car-element {\n    position: absolute;\n    bottom: 15px;\n    left: -80px;\n    font-size: 50px;\n    z-index: 0;\n    opacity: 0;\n    transform: scaleX(-1);\n}\n</style>\n\n<script>\n(function(scope) {\n    // Initial car approach on load\n    setTimeout(function() {\n        var car = document.getElementById(\"car-element\");\n        if (car) {\n            car.style.transition = 'transform 1.5s ease-out';\n            car.style.transform = 'translateX(180px) scaleX(-1)';\n            car.style.opacity = '1';\n        }\n    }, 500);\n\n    scope.$watch('msg', function(msg) {\n        if (!msg) return;\n        var cmd = msg.payload;\n        if (typeof cmd === 'object') { cmd = JSON.stringify(cmd); }\n        \n        var arm = document.getElementById(\"barrier-arm\");\n        var text = document.getElementById(\"gate-text\");\n        var car = document.getElementById(\"car-element\");\n        if (!arm || !text) return;\n        \n        if (cmd === \"\") {\n            // Reset logic if needed, but car is already waiting.\n            // We can just ensure it is at the gate.\n            if (car) {\n                car.style.transition = 'transform 0.5s ease-out';\n                car.style.transform = 'translateX(180px) scaleX(-1)';\n                car.style.opacity = '1';\n            }\n        } else if (cmd && (cmd.includes('open_gate') || cmd.includes('SUCCESS'))) {\n            arm.classList.remove(\"closed\");\n            arm.classList.add(\"open\");\n            text.innerText = \"OPEN\";\n            text.style.color = \"#4CAF50\";\n            \n            if (car) {\n                // Continue driving through\n                car.style.transition = 'transform 1.5s ease-in 0.5s, opacity 0.5s ease 1.5s';\n                car.style.transform = 'translateX(500px) scaleX(-1)';\n                car.style.opacity = '0';\n            }\n            \n            // Automatically close after 3 seconds\n            setTimeout(function() {\n                arm.classList.remove(\"open\");\n                arm.classList.add(\"closed\");\n                text.innerText = \"CLOSED\";\n                text.style.color = \"#f44336\";\n                \n                // Bring the next car after gate closes\n                setTimeout(function() {\n                    if (car) {\n                        car.style.transition = 'none';\n                        car.style.transform = 'translateX(0) scaleX(-1)';\n                        car.style.opacity = '1';\n                        void car.offsetWidth; // force reflow\n                        \n                        car.style.transition = 'transform 1.5s ease-out';\n                        car.style.transform = 'translateX(180px) scaleX(-1)';\n                    }\n                }, 500);\n            }, 3000);\n        } else if (cmd && cmd.includes('FAILED')) {\n            if (car) {\n                // Drive away backwards if failed\n                car.style.transition = 'transform 2s ease-in, opacity 1s ease 1s';\n                car.style.transform = 'translateX(-50px) scaleX(-1)';\n                car.style.opacity = '0';\n                \n                // Bring the next car\n                setTimeout(function() {\n                    if (car) {\n                        car.style.transition = 'none';\n                        car.style.transform = 'translateX(0) scaleX(-1)';\n                        car.style.opacity = '1';\n                        void car.offsetWidth;\n                        \n                        car.style.transition = 'transform 1.5s ease-out';\n                        car.style.transform = 'translateX(180px) scaleX(-1)';\n                    }\n                }, 3000);\n            }\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 650,
+        "y": 350,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ui-upload-form",
+        "type": "ui_template",
+        "z": "tab-parking",
+        "group": "grp-trigger",
+        "name": "Upload Form",
+        "order": 1,
+        "width": 5,
+        "height": 8,
+        "format": "<style>\n  .modern-form {\n      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n      padding: 10px;\n  }\n  .modern-form label {\n      display: block;\n      margin-bottom: 6px;\n      font-weight: 600;\n      color: #333;\n  }\n  .modern-form input[type=\"text\"],\n  .modern-form input[type=\"file\"] {\n      width: 100%;\n      box-sizing: border-box;\n      padding: 10px;\n      margin-bottom: 15px;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      background: #fff;\n      font-family: inherit;\n  }\n  .modern-form input[type=\"text\"]:focus {\n      border-color: #2196F3;\n      outline: none;\n      box-shadow: 0 0 4px rgba(33,150,243,0.3);\n  }\n  .modern-form button {\n      width: 100%;\n      background-color: #2196F3;\n      color: white;\n      padding: 12px;\n      border: none;\n      border-radius: 6px;\n      font-weight: bold;\n      font-size: 14px;\n      cursor: pointer;\n      transition: background-color 0.2s, transform 0.1s;\n      box-shadow: 0 2px 4px rgba(33,150,243,0.3);\n  }\n  .modern-form button:hover {\n      background-color: #1976D2;\n  }\n  .modern-form button:active {\n      transform: scale(0.98);\n  }\n  .nr-dashboard-cardpanel {\n      box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;\n      border-radius: 10px !important;\n      border: 1px solid #eaeaea !important;\n  }\n  .nr-dashboard-text .label {\n      font-weight: bold !important;\n      color: #555 !important;\n  }\n  .nr-dashboard-text .value {\n      font-family: 'Consolas', 'Monaco', monospace !important;\n      color: #0056b3 !important;\n      font-size: 14px !important;\n  }\n</style>\n\n<div class=\"modern-form\">\n    <label>QR Code (Text Input):</label>\n    <input type=\"text\" id=\"qrDataInput\" placeholder=\"e.g.: 1234567890\">\n    \n    <label>Or Upload QR Image:</label>\n    <input type=\"file\" id=\"qrImageInput\" accept=\"image/*\">\n\n    <label>Vehicle License Plate Image:</label>\n    <input type=\"file\" id=\"cameraImageInput\" accept=\"image/*\">\n\n    <button id=\"submitBtn\">\n        SUBMIT FOR SCANNING\n    </button>\n</div>\n\n<script>\n(function(scope) {\n    var qrDataInput = document.getElementById(\"qrDataInput\");\n    var qrImageInput = document.getElementById(\"qrImageInput\");\n    var camImageInput = document.getElementById(\"cameraImageInput\");\n\n    function checkQrStatus() {\n        var hasQrData = qrDataInput.value.trim() !== \"\";\n        var hasQrFile = qrImageInput.files.length > 0;\n        if (hasQrData || hasQrFile) {\n            camImageInput.disabled = false;\n            camImageInput.style.opacity = \"1\";\n        } else {\n            camImageInput.disabled = true;\n            camImageInput.style.opacity = \"0.5\";\n            camImageInput.value = \"\";\n        }\n    }\n\n    qrDataInput.addEventListener(\"input\", checkQrStatus);\n    qrImageInput.addEventListener(\"change\", checkQrStatus);\n    checkQrStatus();\n\n    // Helper function to mildly compress image (to fit websocket limits but keep OCR accuracy)\n    function compressImage(file, callback) {\n        var reader = new FileReader();\n        reader.onload = function(e) {\n            var img = new Image();\n            img.onload = function() {\n                var canvas = document.createElement('canvas');\n                var ctx = canvas.getContext('2d');\n                var MAX_SIZE = 2000;\n                var width = img.width;\n                var height = img.height;\n                \n                if (width > height) {\n                    if (width > MAX_SIZE) {\n                        height *= MAX_SIZE / width;\n                        width = MAX_SIZE;\n                    }\n                } else {\n                    if (height > MAX_SIZE) {\n                        width *= MAX_SIZE / height;\n                        height = MAX_SIZE;\n                    }\n                }\n                \n                canvas.width = width;\n                canvas.height = height;\n                ctx.drawImage(img, 0, 0, width, height);\n                \n                var dataUrl = canvas.toDataURL('image/jpeg', 0.95);\n                callback(dataUrl);\n            };\n            img.src = e.target.result;\n        };\n        reader.readAsDataURL(file);\n    }\n\n    document.getElementById(\"submitBtn\").addEventListener(\"click\", function() {\n        var qrData = qrDataInput.value;\n        var qrFile = qrImageInput.files[0];\n        var camFile = camImageInput.files[0];\n        \n        if (!camFile) {\n            alert(\"ERROR: You must select a Vehicle License Plate Image!\");\n            return;\n        }\n\n        var payloadData = {\n            qr_data: qrData\n        };\n\n        var readPromises = [];\n\n        // Compress camera image\n        readPromises.push(new Promise((resolve) => {\n            compressImage(camFile, function(dataUrl) {\n                payloadData.camera_image = {\n                    data: dataUrl,\n                    filename: camFile.name,\n                    mimetype: 'image/jpeg'\n                };\n                resolve();\n            });\n        }));\n\n        // Compress QR image if exists\n        if (qrFile) {\n            readPromises.push(new Promise((resolve) => {\n                compressImage(qrFile, function(dataUrl) {\n                    payloadData.qr_image = {\n                        data: dataUrl,\n                        filename: qrFile.name,\n                        mimetype: 'image/jpeg'\n                    };\n                    resolve();\n                });\n            }));\n        }\n\n        Promise.all(readPromises).then(() => {\n            var btn = document.getElementById(\"submitBtn\");\n            btn.innerText = \"SENDING...\";\n            btn.style.backgroundColor = \"#9e9e9e\";\n            \n            // Send payload and clear command simultaneously\n            scope.send([ { payload: payloadData }, { payload: \"\" } ]);\n            \n            setTimeout(() => {\n                btn.innerText = \"SUBMIT FOR SCANNING\";\n                btn.style.backgroundColor = \"#2196F3\";\n            }, 2000);\n        });\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 100,
+        "outputs": 2,
+        "wires": [
+            [
+                "fn-build-multipart"
+            ],
+            [
+                "ui-plate-text",
+                "ui-confidence-text",
+                "ui-timestamp-text",
+                "ui-status-text",
+                "ui-gate-status"
+            ]
+        ]
+    },
+    {
+        "id": "fn-build-multipart",
+        "type": "function",
+        "z": "tab-parking",
+        "name": "Build Multipart Form",
+        "func": "var p = msg.payload;\nvar formData = {};\n\nif (p.qr_data && p.qr_data.trim() !== '') {\n    formData.qr_data = p.qr_data;\n}\n\nif (p.qr_image) {\n    formData.qr_image = {\n        value: Buffer.from(p.qr_image.data.split(',')[1], 'base64'),\n        options: {\n            filename: p.qr_image.filename,\n            contentType: p.qr_image.mimetype\n        }\n    };\n}\n\nif (p.camera_image) {\n    formData.camera_image = {\n        value: Buffer.from(p.camera_image.data.split(',')[1], 'base64'),\n        options: {\n            filename: p.camera_image.filename,\n            contentType: p.camera_image.mimetype\n        }\n    };\n}\n\nmsg.payload = formData;\nmsg.headers = {\n    \"content-type\": \"multipart/form-data\"\n};\nmsg.url = 'http://qr-scanner:8001/scan';\nmsg.method = 'POST';\n\nreturn msg;",
+        "outputs": 1,
+        "x": 380,
+        "y": 100,
+        "wires": [
+            [
+                "http-request"
+            ]
+        ]
+    },
+    {
+        "id": "http-request",
+        "type": "http request",
+        "z": "tab-parking",
+        "name": "POST /scan",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [
+                "fn-handle-response"
+            ]
+        ]
+    },
+    {
+        "id": "fn-handle-response",
+        "type": "function",
+        "z": "tab-parking",
+        "name": "Handle Response",
+        "func": "var resp = msg.payload;\nif (msg.statusCode !== 200 || (resp && resp.success === false)) {\n    var err = (resp && resp.message) ? resp.message : 'API Request Failed';\n    var toastMsg = { payload: err, topic: 'Scan Error' };\n    var statusMsg = { payload: 'FAILED: ' + err };\n    return [toastMsg, statusMsg];\n}\nreturn [null, null];",
+        "outputs": 2,
+        "x": 790,
+        "y": 100,
+        "wires": [
+            [
+                "ui-toast-error"
+            ],
+            [
+                "ui-status-text",
+                "ui-gate-status"
+            ]
+        ]
+    },
+    {
+        "id": "ui-toast-error",
+        "type": "ui_toast",
+        "z": "tab-parking",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Scan Error",
+        "name": "Show Error",
+        "x": 980,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "config-mqtt-broker",
+        "type": "mqtt-broker",
+        "name": "Mock Mosquitto",
+        "broker": "mosquitto",
+        "port": "1883",
+        "clientid": "node-red-dashboard",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "grp-trigger",
+        "type": "ui_group",
+        "name": "Gate Trigger",
+        "tab": "ui-tab-parking",
+        "order": 1,
+        "disp": true,
+        "width": "5"
+    },
+    {
+        "id": "grp-result",
+        "type": "ui_group",
+        "name": "Recognition Results",
+        "tab": "ui-tab-parking",
+        "order": 2,
+        "disp": true,
+        "width": "7"
+    },
+    {
+        "id": "grp-gate",
+        "type": "ui_group",
+        "name": "Gate Status",
+        "tab": "ui-tab-parking",
+        "order": 3,
+        "disp": true,
+        "width": "12"
+    },
+    {
+        "id": "ui-tab-parking",
+        "type": "ui_tab",
+        "name": "Smart Parking",
+        "icon": "dashboard",
+        "order": 1,
+        "disp": true
+    }
+]

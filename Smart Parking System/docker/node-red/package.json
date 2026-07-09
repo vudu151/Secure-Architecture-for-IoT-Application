@@ -1,0 +1,8 @@
+{
+    "name": "node-red-parking",
+    "description": "Node-RED dashboard for Smart Parking System",
+    "version": "1.0.0",
+    "dependencies": {
+        "node-red-dashboard": "^3.6.6"
+    }
+}
