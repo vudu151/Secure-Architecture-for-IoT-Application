@@ -48,7 +48,7 @@ public class BookingServiceImpl implements BookingService {
     private final SimpMessagingTemplate messagingTemplate;
     private final AuditService auditService;
 
-    @Value("${parking.price-per-hour:5000}")
+    @Value("${parking.price-per-hour:50000}")
     private double pricePerHour;
 
     @Override
@@ -83,6 +83,14 @@ public class BookingServiceImpl implements BookingService {
         String qrCodeData = String.format("{\"bookingCode\":\"%s\",\"slotCode\":\"%s\",\"userId\":%d,\"timestamp\":%d}",
                 bookingCode, slot.getSlotCode(), userId, System.currentTimeMillis());
 
+        // Calculate estimated total amount
+        Duration duration = Duration.between(request.getBookedFrom(), request.getBookedUntil());
+        long hours = duration.toHours();
+        if (duration.toMinutes() % 60 > 0 || hours == 0) {
+            hours += 1;
+        }
+        BigDecimal estimatedAmount = BigDecimal.valueOf(hours).multiply(BigDecimal.valueOf(pricePerHour));
+
         Booking booking = Booking.builder()
                 .user(user)
                 .vehicle(vehicle)
@@ -92,7 +100,7 @@ public class BookingServiceImpl implements BookingService {
                 .status(BookingStatus.CONFIRMED)
                 .bookedFrom(request.getBookedFrom())
                 .bookedUntil(request.getBookedUntil())
-                .totalAmount(BigDecimal.ZERO)
+                .totalAmount(estimatedAmount)
                 .build();
 
         Booking savedBooking = bookingRepository.save(booking);

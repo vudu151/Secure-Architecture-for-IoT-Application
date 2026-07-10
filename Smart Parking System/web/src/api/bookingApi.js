@@ -1,6 +1,9 @@
 import axiosInstance from './axiosInstance';
 
 export const bookingApi = {
+  getMyBookings: (params) =>
+    axiosInstance.get('/bookings/my', { params }),
+
   getBookings: (params) =>
     axiosInstance.get('/bookings', { params }),
 
@@ -11,13 +14,13 @@ export const bookingApi = {
     axiosInstance.post('/bookings', bookingData),
 
   cancelBooking: (id) =>
-    axiosInstance.patch(`/bookings/${id}/cancel`),
+    axiosInstance.post(`/bookings/${id}/cancel`),
 
   checkIn: (id) =>
-    axiosInstance.patch(`/bookings/${id}/check-in`),
+    axiosInstance.post(`/bookings/${id}/check-in`),
 
   checkOut: (id) =>
-    axiosInstance.patch(`/bookings/${id}/check-out`),
+    axiosInstance.post(`/bookings/${id}/check-out`),
 };
 
 export default bookingApi;

@@ -18,4 +18,6 @@ public class DashboardDTO {
     private int reservedSlots;
     private BigDecimal revenueToday;
     private int totalBookingsToday;
+    private java.util.List<BookingDTO> recentBookings;
+    private java.util.List<HourlyTrafficDTO> hourlyTraffic;
 }

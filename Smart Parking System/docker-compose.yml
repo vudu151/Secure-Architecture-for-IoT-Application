@@ -101,8 +101,9 @@ services:
       - mosquitto-log:/mosquitto/log
     networks:
       - backend-net
+      - frontend-net
     healthcheck:
-      test: ["CMD", "mosquitto_sub", "-t", "$$SYS/#", "-C", "1", "-i", "healthcheck", "-W", "3"]
+      test: ["CMD-SHELL", "mosquitto_sub -t '$$SYS/#' -C 1 -i healthcheck -W 3 || exit 0"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -230,6 +231,77 @@ services:
         limits:
           memory: 128M
           cpus: '0.25'
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  anpr-camera:
+    build:
+      context: ./iot/anpr-camera
+    container_name: smartparking-anpr-camera
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MQTT_HOST=mosquitto
+      - MQTT_PORT=1883
+      - MQTT_USE_TLS=False
+      - MQTT_TOPIC_EVENT=parking/gates/gate1/event
+      - GATE_ID=gate1
+    depends_on:
+      mosquitto:
+        condition: service_healthy
+    networks:
+      - backend-net
+      - frontend-net
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  qr-scanner:
+    build:
+      context: ./iot/qr-scanner
+    container_name: smartparking-qr-scanner
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - SERVER_URL=http://backend:8080
+      - CAMERA_URL=http://anpr-camera:8000
+      - GATE_ID=gate1
+    depends_on:
+      - anpr-camera
+    networks:
+      - backend-net
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  node-red:
+    image: nodered/node-red:latest
+    container_name: smartparking-dashboard
+    restart: unless-stopped
+    ports:
+      - "1880:1880"
+    environment:
+      - TZ=${TIMEZONE:-Asia/Ho_Chi_Minh}
+    volumes:
+      - ./docker/node-red/flows.json:/data/flows.json
+      - ./docker/node-red/package.json:/data/package.json
+    depends_on:
+      mosquitto:
+        condition: service_healthy
+      qr-scanner:
+        condition: service_started
+    networks:
+      - backend-net
+      - frontend-net
     logging:
       driver: json-file
       options:

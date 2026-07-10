@@ -15,4 +15,10 @@ public class AuthResponse {
     @Builder.Default
     private String tokenType = "Bearer";
     private long expiresIn; // in milliseconds
+
+    // User info included for frontend role-based routing
+    private Long userId;
+    private String email;
+    private String role;
+    private String fullName;
 }

@@ -5,10 +5,13 @@ import { connectWebSocket, disconnectWebSocket } from './utils/websocket';
 
 // Layouts & Guards
 import AdminLayout from './layouts/AdminLayout';
+import DriverLayout from './layouts/DriverLayout';
 import PrivateRoute from './components/PrivateRoute';
 
-// Pages
+// Auth
 import LoginPage from './pages/LoginPage';
+
+// Admin pages
 import DashboardPage from './pages/DashboardPage';
 import ParkingMapPage from './pages/ParkingMapPage';
 import RevenuePage from './pages/RevenuePage';
@@ -16,8 +19,15 @@ import UsersPage from './pages/UsersPage';
 import DevicesPage from './pages/DevicesPage';
 import AuditLogsPage from './pages/AuditLogsPage';
 
+// Driver pages
+import DriverHomePage from './pages/driver/DriverHomePage';
+import DriverParkingPage from './pages/driver/DriverParkingPage';
+import DriverBookingsPage from './pages/driver/DriverBookingsPage';
+import DriverWalletPage from './pages/driver/DriverWalletPage';
+import DriverVehiclesPage from './pages/driver/DriverVehiclesPage';
+
 const App = () => {
-  const { isAuthenticated, checkAuth } = useAuthStore();
+  const { isAuthenticated, user, checkAuth } = useAuthStore();
 
   useEffect(() => {
     checkAuth();
@@ -25,7 +35,6 @@ const App = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      // Connect to WebSocket STOMP broker for real-time dashboard and map updates
       connectWebSocket(
         () => console.log('[App] WebSocket connected successfully'),
         (err) => console.error('[App] WebSocket connection error:', err)
@@ -33,7 +42,6 @@ const App = () => {
     } else {
       disconnectWebSocket();
     }
-
     return () => {
       disconnectWebSocket();
     };
@@ -43,11 +51,12 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        
+
+        {/* ── ADMIN routes ── */}
         <Route
           path="/"
           element={
-            <PrivateRoute>
+            <PrivateRoute requiredRole="ADMIN">
               <AdminLayout />
             </PrivateRoute>
           }
@@ -60,8 +69,24 @@ const App = () => {
           <Route path="devices" element={<DevicesPage />} />
           <Route path="audit-logs" element={<AuditLogsPage />} />
         </Route>
-        
-        <Route path="*" element={<Navigate to="/" replace />} />
+
+        {/* ── DRIVER routes ── */}
+        <Route
+          path="/driver"
+          element={
+            <PrivateRoute requiredRole="DRIVER">
+              <DriverLayout />
+            </PrivateRoute>
+          }
+        >
+          <Route index element={<DriverHomePage />} />
+          <Route path="parking" element={<DriverParkingPage />} />
+          <Route path="bookings" element={<DriverBookingsPage />} />
+          <Route path="wallet" element={<DriverWalletPage />} />
+          <Route path="vehicles" element={<DriverVehiclesPage />} />
+        </Route>
+
+        <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
   );

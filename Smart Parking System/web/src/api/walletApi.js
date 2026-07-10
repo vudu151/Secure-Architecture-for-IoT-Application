@@ -7,8 +7,8 @@ export const walletApi = {
   topup: (amount) =>
     axiosInstance.post('/wallet/topup', { amount }),
 
-  getTransactions: (params) =>
-    axiosInstance.get('/wallet/transactions', { params }),
+  getMyTransactions: (params) =>
+    axiosInstance.get('/transactions/my', { params }),
 };
 
 export default walletApi;

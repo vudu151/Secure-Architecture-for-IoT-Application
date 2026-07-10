@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Button, Card, Typography, Space } from 'antd';
+import { Form, Input, Button, Card, Typography, Space, message } from 'antd';
 import { UserOutlined, LockOutlined, CarOutlined } from '@ant-design/icons';
 import { useNavigate, Navigate } from 'react-router-dom';
 import useAuthStore from '../stores/authStore';
@@ -7,18 +7,23 @@ import useAuthStore from '../stores/authStore';
 const { Title, Text } = Typography;
 
 const LoginPage = () => {
-  const { login, isAuthenticated, loading } = useAuthStore();
+  const { login, isAuthenticated, user, loading } = useAuthStore();
   const navigate = useNavigate();
 
-  // If already authenticated, redirect to dashboard
+  // Redirect already-authenticated users to their own portal
   if (isAuthenticated) {
-    return <Navigate to="/dashboard" replace />;
+    if (user?.role === 'ADMIN') return <Navigate to="/dashboard" replace />;
+    if (user?.role === 'DRIVER') return <Navigate to="/driver" replace />;
   }
 
   const onFinish = async (values) => {
-    const success = await login(values.email, values.password);
-    if (success) {
-      navigate('/dashboard');
+    const result = await login(values.email, values.password);
+    if (result?.success) {
+      if (result.role === 'ADMIN') {
+        navigate('/dashboard');
+      } else if (result.role === 'DRIVER') {
+        navigate('/driver');
+      }
     }
   };
 

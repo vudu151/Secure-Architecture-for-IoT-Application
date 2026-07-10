@@ -60,9 +60,9 @@ mqtt:
   client:
     id: smart-parking-backend
   topics:
-    slot-status: parking/slots/+/status
-    gate-event: parking/gates/+/event
-    device-heartbeat: parking/devices/+/heartbeat
+    slot-status: smartpkg/slots/+/status
+    gate-event: smartpkg/gates/+/event
+    device-heartbeat: smartpkg/devices/+/heartbeat
 
 # AES Encryption
 aes:
@@ -70,7 +70,7 @@ aes:
 
 # Parking Configuration
 parking:
-  price-per-hour: 5000  # VND
+  price-per-hour: 50000  # VND
 
 # Springdoc OpenAPI
 springdoc:

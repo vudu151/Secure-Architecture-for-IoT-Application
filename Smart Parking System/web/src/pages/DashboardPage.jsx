@@ -32,16 +32,8 @@ const DashboardPage = () => {
       const dashboardData = data.data || data;
       setStats(dashboardData);
       
-      // Mock recent bookings list based on stats
-      // In a real app we could load this from a booking API, 
-      // but to align with Java Backend Admin API we combine dashboard data.
-      // Let's populate some mock bookings for display
-      setRecentBookings([
-        { id: 1, bookingCode: 'BK7A8902', slotCode: 'A03', vehiclePlate: '30A-987.65', status: 'CHECKED_IN', bookedFrom: new Date(Date.now() - 3600000).toISOString(), createdAt: new Date(Date.now() - 7200000).toISOString() },
-        { id: 2, bookingCode: 'BK9C8741', slotCode: 'A07', vehiclePlate: '29K-123.45', status: 'CONFIRMED', bookedFrom: new Date(Date.now() + 1800000).toISOString(), createdAt: new Date(Date.now() - 1200000).toISOString() },
-        { id: 3, bookingCode: 'BK3D5210', slotCode: 'B02', vehiclePlate: '51F-654.32', status: 'COMPLETED', bookedFrom: new Date(Date.now() - 14400000).toISOString(), createdAt: new Date(Date.now() - 20000000).toISOString() },
-        { id: 4, bookingCode: 'BK1A0098', slotCode: 'B10', vehiclePlate: '30E-888.88', status: 'CANCELLED', bookedFrom: new Date(Date.now() - 3600000).toISOString(), createdAt: new Date(Date.now() - 8000000).toISOString() },
-      ]);
+      // Use real bookings and traffic from the backend
+      setRecentBookings(dashboardData.recentBookings || []);
       
       setLoading(false);
     } catch (error) {
@@ -88,18 +80,9 @@ const DashboardPage = () => {
     interactions: [{ type: 'element-active' }],
   };
 
-  // Hourly traffic column chart (Mock last 8 hours data)
+  // Hourly traffic column chart mapped from real backend data
   const columnConfig = {
-    data: [
-      { hour: '08:00', bookings: 5 },
-      { hour: '10:00', bookings: 12 },
-      { hour: '12:00', bookings: 8 },
-      { hour: '14:00', bookings: 15 },
-      { hour: '16:00', bookings: 22 },
-      { hour: '18:00', bookings: 18 },
-      { hour: '20:00', bookings: 10 },
-      { hour: '22:00', bookings: 4 },
-    ],
+    data: stats.hourlyTraffic || [],
     xField: 'hour',
     yField: 'bookings',
     label: {

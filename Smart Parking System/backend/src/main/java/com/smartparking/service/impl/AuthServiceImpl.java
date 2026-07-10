@@ -68,6 +68,10 @@ public class AuthServiceImpl implements AuthService {
                 .accessToken(accessToken)
                 .refreshToken(refreshToken)
                 .expiresIn(expiresIn)
+                .userId(savedUser.getId())
+                .email(savedUser.getEmail())
+                .role(savedUser.getRole().name())
+                .fullName(savedUser.getFullName())
                 .build();
     }
 
@@ -105,6 +109,10 @@ public class AuthServiceImpl implements AuthService {
                 .accessToken(accessToken)
                 .refreshToken(refreshToken)
                 .expiresIn(expiresIn)
+                .userId(user.getId())
+                .email(user.getEmail())
+                .role(user.getRole().name())
+                .fullName(user.getFullName())
                 .build();
     }
 

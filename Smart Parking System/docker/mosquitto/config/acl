@@ -19,7 +19,7 @@
 # ---------------------------------------------------------------------------
 # Backend has full read/write access to all topics
 topic readwrite #
-
+topic read $SYS/#
 # ---------------------------------------------------------------------------
 # ESP32 Devices - Zone A (Slots A01-A10)
 # ---------------------------------------------------------------------------
@@ -149,5 +149,5 @@ topic write parking/devices/rpi_gate2/heartbeat
 # ---------------------------------------------------------------------------
 # Backend client certificate (if connecting via TLS port 8883)
 # ---------------------------------------------------------------------------
-user smartparking-backend
-topic readwrite #
+# user smartparking-backend
+# topic readwrite #

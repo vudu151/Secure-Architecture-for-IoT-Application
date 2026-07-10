@@ -13,9 +13,16 @@ const useAuthStore = create((set, get) => ({
     try {
       const { data } = await authApi.login({ email, password });
       const responseData = data.data || data;
-      const token = responseData.token || responseData.accessToken;
+      const token = responseData.accessToken || responseData.token;
       const refreshToken = responseData.refreshToken;
-      const user = responseData.user || { email, role: responseData.role || 'ADMIN' };
+
+      // Build user object from response fields (backend now returns user info)
+      const user = {
+        id: responseData.userId,
+        email: responseData.email || email,
+        role: responseData.role,
+        fullName: responseData.fullName,
+      };
 
       localStorage.setItem('token', token);
       if (refreshToken) localStorage.setItem('refreshToken', refreshToken);
@@ -29,12 +36,12 @@ const useAuthStore = create((set, get) => ({
       });
 
       message.success('Đăng nhập thành công!');
-      return true;
+      return { success: true, role: user.role };
     } catch (error) {
       set({ loading: false });
       const msg = error.response?.data?.message || 'Đăng nhập thất bại';
       message.error(msg);
-      return false;
+      return { success: false };
     }
   },
 

@@ -63,7 +63,7 @@ class BookingServiceImplTest {
 
     @BeforeEach
     void setUp() {
-        ReflectionTestUtils.setField(bookingService, "pricePerHour", 5000.0);
+        ReflectionTestUtils.setField(bookingService, "pricePerHour", 50000.0);
 
         testUser = User.builder()
                 .id(1L)
@@ -97,7 +97,7 @@ class BookingServiceImplTest {
                 .status(BookingStatus.CONFIRMED)
                 .bookedFrom(LocalDateTime.now().minusHours(1))
                 .bookedUntil(LocalDateTime.now().plusHours(1))
-                .totalAmount(BigDecimal.ZERO)
+                .totalAmount(new BigDecimal("100000.0"))
                 .build();
     }
 
@@ -209,17 +209,17 @@ class BookingServiceImplTest {
         assertNotNull(dto);
         assertEquals(BookingStatus.COMPLETED, dto.getStatus());
         assertEquals(SlotStatus.AVAILABLE, testSlot.getStatus());
-        // 90 minutes parked -> counts as 2 hours -> 2 * 5000 = 10000 VND
-        assertEquals(new BigDecimal("10000.0"), dto.getTotalAmount());
+        // 90 minutes parked -> counts as 2 hours -> 2 * 50000 = 100000 VND
+        assertEquals(new BigDecimal("100000.0"), dto.getTotalAmount());
         
         // Verify deduction called
-        verify(walletService, times(1)).deduct(eq(1L), eq(new BigDecimal("10000.0")));
+        verify(walletService, times(1)).deduct(eq(1L), eq(new BigDecimal("100000.0")));
         
         // Verify transaction logged
         ArgumentCaptor<Transaction> txCaptor = ArgumentCaptor.forClass(Transaction.class);
         verify(transactionRepository, times(1)).save(txCaptor.capture());
         Transaction tx = txCaptor.getValue();
-        assertEquals(new BigDecimal("10000.0"), tx.getAmount());
+        assertEquals(new BigDecimal("100000.0"), tx.getAmount());
         assertEquals(PaymentMethod.WALLET, tx.getPaymentMethod());
         assertEquals(PaymentStatus.COMPLETED, tx.getPaymentStatus());
     }

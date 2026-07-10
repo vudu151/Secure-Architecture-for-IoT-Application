@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
-import { Layout, Menu, Button, Avatar, Dropdown, Space, Typography } from 'antd';
+import {
+  Layout, Menu, Button, Avatar, Dropdown, Space, Typography, Badge,
+} from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
-  DashboardOutlined,
+  CalendarOutlined,
   CarOutlined,
-  DollarOutlined,
-  TeamOutlined,
-  ApiOutlined,
-  FileProtectOutlined,
+  WalletOutlined,
+  HistoryOutlined,
   LogoutOutlined,
   UserOutlined,
+  HomeOutlined,
 } from '@ant-design/icons';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import useAuthStore from '../stores/authStore';
 
-
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
 
-const AdminLayout = () => {
+const DriverLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
@@ -32,52 +32,51 @@ const AdminLayout = () => {
 
   const menuItems = [
     {
-      key: '/dashboard',
-      icon: <DashboardOutlined />,
-      label: 'Bảng điều khiển',
+      key: '/driver',
+      icon: <HomeOutlined />,
+      label: 'Tổng quan',
     },
     {
-      key: '/parking-map',
+      key: '/driver/parking',
       icon: <CarOutlined />,
-      label: 'Bản đồ bãi đỗ',
+      label: 'Đặt chỗ đỗ xe',
     },
     {
-      key: '/revenue',
-      icon: <DollarOutlined />,
-      label: 'Báo cáo doanh thu',
+      key: '/driver/bookings',
+      icon: <CalendarOutlined />,
+      label: 'Lịch sử đặt chỗ',
     },
     {
-      key: '/users',
-      icon: <TeamOutlined />,
-      label: 'Quản lý tài xế',
+      key: '/driver/wallet',
+      icon: <WalletOutlined />,
+      label: 'Ví tiền',
     },
     {
-      key: '/devices',
-      icon: <ApiOutlined />,
-      label: 'Giám sát thiết bị',
-    },
-    {
-      key: '/audit-logs',
-      icon: <FileProtectOutlined />,
-      label: 'Nhật ký bảo mật',
+      key: '/driver/vehicles',
+      icon: <HistoryOutlined />,
+      label: 'Xe của tôi',
     },
   ];
 
   const userDropdownItems = {
     items: [
       {
-        key: 'email',
-        label: <Text strong>{user?.email || 'Admin'}</Text>,
+        key: 'name',
+        label: <Text strong>{user?.fullName || 'Tài xế'}</Text>,
         disabled: true,
       },
       {
-        type: 'divider',
+        key: 'email',
+        label: <Text type="secondary">{user?.email}</Text>,
+        disabled: true,
       },
+      { type: 'divider' },
       {
         key: 'logout',
         icon: <LogoutOutlined />,
         label: 'Đăng xuất',
         onClick: handleLogout,
+        danger: true,
       },
     ],
   };
@@ -86,9 +85,10 @@ const AdminLayout = () => {
     navigate(key);
   };
 
-  // Find page title based on current path
-  const currentMenuItem = menuItems.find((item) => location.pathname === item.key);
-  const pageTitle = currentMenuItem ? currentMenuItem.label : 'Smart Parking Admin';
+  const currentMenuItem = menuItems.find((item) =>
+    location.pathname === item.key || location.pathname.startsWith(item.key + '/')
+  );
+  const pageTitle = currentMenuItem ? currentMenuItem.label : 'Smart Parking';
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
@@ -97,7 +97,6 @@ const AdminLayout = () => {
         collapsible
         collapsed={collapsed}
         theme="dark"
-        className="antd-sidebar"
         width={240}
         style={{
           overflow: 'auto',
@@ -106,9 +105,10 @@ const AdminLayout = () => {
           left: 0,
           top: 0,
           bottom: 0,
+          background: 'linear-gradient(180deg, #1a237e 0%, #0d47a1 100%)',
         }}
       >
-        {/* Sider Logo Section */}
+        {/* Logo */}
         <div
           style={{
             height: 64,
@@ -116,12 +116,11 @@ const AdminLayout = () => {
             alignItems: 'center',
             justifyContent: collapsed ? 'center' : 'flex-start',
             padding: collapsed ? '0' : '0 24px',
-            background: '#002140',
-            transition: 'all 0.2s',
+            borderBottom: '1px solid rgba(255,255,255,0.1)',
           }}
         >
           <Space size="middle">
-            <CarOutlined style={{ fontSize: 24, color: '#1677ff' }} />
+            <CarOutlined style={{ fontSize: 24, color: '#64b5f6' }} />
             {!collapsed && (
               <span
                 style={{
@@ -132,56 +131,84 @@ const AdminLayout = () => {
                   whiteSpace: 'nowrap',
                 }}
               >
-                SPARK ADMIN
+                SPARK DRIVER
               </span>
             )}
           </Space>
         </div>
-        
+
         <Menu
           theme="dark"
           mode="inline"
-          selectedKeys={[location.pathname]}
+          selectedKeys={[
+            menuItems.find(
+              (item) =>
+                location.pathname === item.key ||
+                location.pathname.startsWith(item.key + '/')
+            )?.key || '/driver',
+          ]}
           items={menuItems}
           onClick={handleMenuClick}
-          style={{ padding: '16px 0' }}
+          style={{
+            padding: '16px 0',
+            background: 'transparent',
+          }}
         />
       </Sider>
-      
+
       <Layout style={{ marginLeft: collapsed ? 80 : 240, transition: 'all 0.2s' }}>
-        <Header className="antd-header">
+        <Header
+          style={{
+            padding: '0 24px',
+            background: '#fff',
+            display: 'flex',
+            alignItems: 'center',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.06)',
+            position: 'sticky',
+            top: 0,
+            zIndex: 100,
+          }}
+        >
           <Button
             type="text"
             icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)}
             style={{ fontSize: '16px', width: 64, height: 64 }}
           />
-          
-          <span style={{ fontSize: 18, fontWeight: 'bold', color: '#1f1f1f', flex: 1, marginLeft: 16 }}>
+
+          <span style={{ fontSize: 18, fontWeight: 'bold', color: '#1a237e', flex: 1, marginLeft: 8 }}>
             {pageTitle}
           </span>
 
           <Space size="large">
             <Dropdown menu={userDropdownItems} placement="bottomRight" trigger={['click']}>
               <Space style={{ cursor: 'pointer' }}>
-                <Avatar style={{ backgroundColor: '#1a237e' }} icon={<UserOutlined />} />
-                {!collapsed && <span style={{ color: '#595959' }}>{user?.fullName || 'Quản trị viên'}</span>}
+                <Avatar
+                  style={{
+                    background: 'linear-gradient(135deg, #1a237e 0%, #0d47a1 100%)',
+                  }}
+                  icon={<UserOutlined />}
+                />
+                {!collapsed && (
+                  <span style={{ color: '#595959', fontWeight: 500 }}>
+                    {user?.fullName || 'Tài xế'}
+                  </span>
+                )}
               </Space>
             </Dropdown>
           </Space>
         </Header>
-        
+
         <Content
           style={{
-            margin: '24px 24px 0',
-            padding: 24,
+            margin: '24px',
+            padding: 0,
             minHeight: 280,
-            overflow: 'initial',
           }}
         >
           <Outlet />
         </Content>
-        
+
         <div style={{ textAlign: 'center', padding: '24px 0', color: '#8c8c8c' }}>
           Smart Parking System ©2026. Secure IoT Architecture Project (HUST).
         </div>
@@ -190,4 +217,4 @@ const AdminLayout = () => {
   );
 };
 
-export default AdminLayout;
+export default DriverLayout;

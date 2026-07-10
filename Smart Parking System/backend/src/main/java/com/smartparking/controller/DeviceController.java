@@ -43,9 +43,10 @@ public class DeviceController {
 
     @PostMapping("/verify-qr")
     public ResponseEntity<ApiResponse<BookingDTO>> verifyQr(
-            @RequestParam String qrData,
-            @RequestParam String gateId
+            @RequestBody java.util.Map<String, String> payload
     ) {
+        String qrData = payload.get("qr_code_data");
+        String gateId = payload.get("gate_id");
         log.info("Received QR verification request at gate: {}", gateId);
         BookingDTO dto = deviceService.verifyQr(qrData, gateId);
         return ResponseEntity.ok(ApiResponse.success("QR code verified successfully", dto));

@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "ESP32 HTTP Demo",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -9.3,
+      "left": 230,
+      "attrs": { "temperature": "28.5", "humidity": "65.0" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v124.8", "h-211.2", "v-201.6" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "v115.2", "h-96", "v-192" ] ]
+  ],
+  "dependencies": {}
+}

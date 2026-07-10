@@ -154,13 +154,14 @@ CREATE INDEX IF NOT EXISTS idx_audit_log_created_at ON security_audit_log(create
 
 -- Admin user (password: admin123)
 -- BCrypt hash generated with strength 12
+-- password: admin123
 INSERT INTO users (email, password_hash, full_name, phone, role, balance, is_active)
-VALUES ('admin@smartparking.com', '$2a$12$LJ3m4ys3uz0b6Tf3fNaZXeVq8IFMwZMGqNOAHnNJoGpZsv4UfWbWe', 'System Admin', '0901234567', 'ADMIN', 0, TRUE)
+VALUES ('admin@smartparking.com', '$2a$12$DuIuBLiDQmkJx1NkHb.jteJvGKOMoFLtxiCou4L99de8M/o7e9ijS', 'System Admin', '0901234567', 'ADMIN', 0, TRUE)
 ON CONFLICT (email) DO NOTHING;
 
 -- Driver user (password: driver123)
 INSERT INTO users (email, password_hash, full_name, phone, role, balance, is_active)
-VALUES ('driver@smartparking.com', '$2a$12$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Test Driver', '0909876543', 'DRIVER', 100000, TRUE)
+VALUES ('driver@smartparking.com', '$2a$12$b/r8Fe2yMPYy7kX8TptHNe4mKTqST3P.ANzxP4rfmvoqBr63smnaS', 'Test Driver', '0909876543', 'DRIVER', 100000, TRUE)
 ON CONFLICT (email) DO NOTHING;
 
 -- Parking Slots: Zone A (A01-A10)

@@ -51,13 +51,32 @@ public class AdminServiceImpl implements AdminService {
         LocalDateTime startOfDay = LocalDate.now().atStartOfDay();
         
         BigDecimal revenueToday = transactionRepository.findAll().stream()
-                .filter(t -> t.getCreatedAt().isAfter(startOfDay) && t.getPaymentStatus() == PaymentStatus.COMPLETED)
+                .filter(t -> t.getCreatedAt().isAfter(startOfDay) && t.getPaymentStatus() == PaymentStatus.COMPLETED && t.getBooking() != null)
                 .map(Transaction::getAmount)
                 .reduce(BigDecimal.ZERO, BigDecimal::add);
 
-        int totalBookingsToday = (int) bookingRepository.findAll().stream()
+        List<Booking> todayBookings = bookingRepository.findAll().stream()
                 .filter(b -> b.getCreatedAt().isAfter(startOfDay))
-                .count();
+                .collect(Collectors.toList());
+                
+        int totalBookingsToday = todayBookings.size();
+        
+        List<BookingDTO> recentBookings = bookingRepository.findAll().stream()
+                .sorted((b1, b2) -> b2.getCreatedAt().compareTo(b1.getCreatedAt()))
+                .limit(10)
+                .map(this::convertToBookingDTO)
+                .collect(Collectors.toList());
+                
+        Map<Integer, Long> hourlyCounts = todayBookings.stream()
+                .collect(Collectors.groupingBy(b -> b.getCreatedAt().getHour(), Collectors.counting()));
+                
+        List<HourlyTrafficDTO> hourlyTraffic = java.util.stream.IntStream.range(0, 24)
+                .filter(hour -> hour >= 6 && hour <= 22 && hour % 2 == 0) // match the frontend 8:00, 10:00 pattern or just return all
+                .mapToObj(hour -> {
+                    long count = hourlyCounts.getOrDefault(hour, 0L) + hourlyCounts.getOrDefault(hour + 1, 0L);
+                    return new HourlyTrafficDTO(String.format("%02d:00", hour), (int) count);
+                })
+                .collect(Collectors.toList());
 
         return DashboardDTO.builder()
                 .totalSlots(totalSlots)
@@ -66,6 +85,8 @@ public class AdminServiceImpl implements AdminService {
                 .reservedSlots(reservedSlots)
                 .revenueToday(revenueToday)
                 .totalBookingsToday(totalBookingsToday)
+                .recentBookings(recentBookings)
+                .hourlyTraffic(hourlyTraffic)
                 .build();
     }
 
@@ -77,7 +98,8 @@ public class AdminServiceImpl implements AdminService {
         LocalDateTime end = to.plusDays(1).atStartOfDay();
 
         List<Transaction> transactions = transactionRepository.findAll().stream()
-                .filter(t -> t.getCreatedAt().isAfter(start) && t.getCreatedAt().isBefore(end) && t.getPaymentStatus() == PaymentStatus.COMPLETED)
+                .filter(t -> t.getCreatedAt().isAfter(start) && t.getCreatedAt().isBefore(end) 
+                        && t.getPaymentStatus() == PaymentStatus.COMPLETED && t.getBooking() != null)
                 .collect(Collectors.toList());
 
         Map<LocalDate, List<Transaction>> grouped = transactions.stream()
@@ -173,6 +195,24 @@ public class AdminServiceImpl implements AdminService {
                 .isOnline(device.getIsOnline())
                 .lastHeartbeat(device.getLastHeartbeat())
                 .firmwareVersion(device.getFirmwareVersion())
+                .build();
+    }
+
+    private BookingDTO convertToBookingDTO(Booking b) {
+        return BookingDTO.builder()
+                .id(b.getId())
+                .slotCode(b.getSlot().getSlotCode())
+                .zone(b.getSlot().getZone())
+                .vehiclePlate(b.getVehicle().getLicensePlate())
+                .bookingCode(b.getBookingCode())
+                .qrCodeData(b.getQrCodeData())
+                .status(b.getStatus())
+                .bookedFrom(b.getBookedFrom())
+                .bookedUntil(b.getBookedUntil())
+                .checkedInAt(b.getCheckedInAt())
+                .checkedOutAt(b.getCheckedOutAt())
+                .totalAmount(b.getTotalAmount())
+                .createdAt(b.getCreatedAt())
                 .build();
     }
 }

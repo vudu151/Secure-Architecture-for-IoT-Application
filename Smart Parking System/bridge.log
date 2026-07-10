@@ -1,0 +1,4 @@
+/home/duvx/Documents/Hust Master/Secure Architecture for IoT Application/Smart Parking System/bridge.py:13: DeprecationWarning: Callback API version 1 is deprecated, update to latest version
+  local_client = mqtt.Client(client_id="python_bridge_local")
+/home/duvx/Documents/Hust Master/Secure Architecture for IoT Application/Smart Parking System/bridge.py:14: DeprecationWarning: Callback API version 1 is deprecated, update to latest version
+  remote_client = mqtt.Client(client_id="python_bridge_remote_12345")
