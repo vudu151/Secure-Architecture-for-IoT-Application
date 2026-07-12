@@ -22,6 +22,7 @@ services:
       - MQTT_USE_TLS=False
       - MQTT_TOPIC_EVENT=parking/gates/gate1/event
       - GATE_ID=gate1
+      - CAMERA_SOURCE=${CAMERA_SOURCE}
     depends_on:
       - mosquitto
     networks:
@@ -43,7 +44,8 @@ services:
       - mock-net
 
   node-red:
-    image: nodered/node-red:latest
+    build:
+      context: ./docker/node-red
     container_name: mock-dashboard
     ports:
       - "1880:1880"
@@ -51,7 +53,6 @@ services:
       - TZ=Asia/Ho_Chi_Minh
     volumes:
       - ./docker/node-red/flows.json:/data/flows.json
-      - ./docker/node-red/package.json:/data/package.json
     depends_on:
       - mosquitto
       - qr-scanner
