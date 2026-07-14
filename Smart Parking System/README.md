@@ -85,6 +85,22 @@ flutter run
 
 *   Tài khoản Driver thử nghiệm: `driver01@example.com` / `driver123`
 
+### 7. Hướng dẫn sử dụng tính năng ANPR Camera (Live Stream qua điện thoại)
+Để mô phỏng Camera nhận diện biển số (ANPR) theo thời gian thực bằng chính điện thoại của bạn, hãy làm theo các bước sau:
+
+1. **Tải ứng dụng**: Cài đặt ứng dụng **IP Webcam** (trên Android) hoặc ứng dụng phát luồng tương tự trên iOS.
+2. **Đồng bộ mạng**: Đảm bảo máy tính chạy hệ thống và điện thoại đang kết nối cùng một mạng Wi-Fi (Cách ổn định nhất: Phát **Mobile Hotspot** từ điện thoại và cho máy tính bắt sóng).
+3. **Mở luồng Camera**: Mở ứng dụng IP Webcam trên điện thoại, kéo xuống dưới cùng và nhấn **"Start server"**. Trên màn hình camera sẽ hiện ra một địa chỉ IP (Ví dụ: `http://192.168.43.1:8080`).
+4. **Cập nhật hệ thống**: Mở file `.env` ở thư mục gốc, tìm biến `CAMERA_SOURCE` và cập nhật đường dẫn luồng video:
+   ```env
+   CAMERA_SOURCE="http://192.168.43.1:8080/video"
+   ```
+5. **Khởi động lại Camera**: Chạy lệnh cập nhật để hệ thống nhận diện luồng ảnh mới:
+   ```bash
+   docker compose -f docker-compose.mock.yaml --env-file .env up -d
+   ```
+6. Truy cập vào giao diện Node-RED Dashboard, bấm **"SUBMIT FOR SCANNING"**, hệ thống sẽ lấy luồng trực tiếp từ điện thoại của bạn, đếm ngược 5 giây và tiến hành quét biển số!
+
 ---
 
 ## 📖 Tài liệu Báo cáo Đồ án

@@ -1,11 +1,15 @@
 import os
+from dotenv import load_dotenv
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+env_path = os.path.join(BASE_DIR, ".env")
+if os.path.exists(env_path):
+    load_dotenv(env_path)
 
 # --- MQTT mTLS Configuration ---
 MQTT_HOST = os.environ.get("MQTT_HOST", "localhost")
 MQTT_PORT = int(os.environ.get("MQTT_PORT", 8883))
 MQTT_USE_TLS = os.environ.get("MQTT_USE_TLS", "True").lower() in ("true", "1", "yes")
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 CA_CERT = os.environ.get(
     "CA_CERT", os.path.join(BASE_DIR, "docker", "certs", "ca", "ca.crt")
@@ -41,3 +45,6 @@ MIN_PLATE_LENGTH = int(os.environ.get("MIN_PLATE_LENGTH", 5))
 WATCH_FOLDER = os.environ.get("WATCH_FOLDER", None)
 # How often to poll the folder for new images (seconds)
 WATCH_INTERVAL = float(os.environ.get("WATCH_INTERVAL", 2.0))
+
+# --- Stream Settings ---
+CAMERA_SOURCE = os.environ.get("CAMERA_SOURCE", None)

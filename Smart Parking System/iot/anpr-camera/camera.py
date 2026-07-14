@@ -90,6 +90,55 @@ def run_mock(plate_text: str, publisher: MQTTPublisher):
     publisher.publish_plate(plate_text)
 
 
+def run_stream(url: str, publisher: MQTTPublisher):
+    from anpr import ANPREngine
+
+    anpr = ANPREngine(HF_MODEL_REPO, HF_MODEL_FILE, HF_CACHE_DIR)
+
+    logger.info(f"Connecting to video stream at {url}...")
+    cap = cv2.VideoCapture(url)
+
+    if not cap.isOpened():
+        logger.error(f"Cannot open stream: {url}")
+        return
+
+    logger.info("Stream opened successfully. Processing a frame every 2 seconds...")
+    last_process_time = 0
+
+    try:
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                logger.warning("Failed to grab frame. Reconnecting in 5s...")
+                time.sleep(5)
+                cap = cv2.VideoCapture(url)
+                continue
+
+            current_time = time.time()
+            if current_time - last_process_time >= 2.0:
+                plate_text, confidence = anpr.detect_and_recognize(frame)
+
+                if (
+                    plate_text
+                    and len(plate_text) >= MIN_PLATE_LENGTH
+                    and confidence >= OCR_CONFIDENCE_THRESHOLD
+                ):
+                    logger.info(
+                        f"Stream Plate detected: '{plate_text}' (confidence={confidence:.2f})"
+                    )
+                    publisher.publish_plate(plate_text, confidence)
+                    last_process_time = (
+                        current_time + 5.0
+                    )  # Wait 5s before next read to avoid duplicates
+                else:
+                    last_process_time = current_time
+
+    except KeyboardInterrupt:
+        logger.info("Stream mode stopped.")
+    finally:
+        cap.release()
+
+
 def run_api(publisher: MQTTPublisher):
     from fastapi import FastAPI, UploadFile, File, HTTPException, Request
     from fastapi.staticfiles import StaticFiles
@@ -137,6 +186,43 @@ def run_api(publisher: MQTTPublisher):
             logger.warning("API No valid plate found.")
             return {"success": False, "plate": plate_text, "confidence": confidence, "message": "No valid plate found"}
             
+    @app.post("/capture")
+    async def capture_image(request: Request):
+        from config import CAMERA_SOURCE
+        stream_url = CAMERA_SOURCE
+        if not stream_url:
+            raise HTTPException(status_code=500, detail="CAMERA_SOURCE is not set")
+            
+        cap = cv2.VideoCapture(stream_url)
+        if not cap.isOpened():
+            raise HTTPException(status_code=500, detail=f"Cannot open stream: {stream_url}")
+            
+        # Give camera time to warm up and get a stable frame
+        for _ in range(5):
+            cap.read()
+        ret, frame = cap.read()
+        cap.release()
+        
+        if not ret or frame is None:
+            raise HTTPException(status_code=500, detail="Failed to grab frame")
+            
+        plate_text, confidence = anpr.detect_and_recognize(frame)
+        
+        if plate_text and len(plate_text) >= MIN_PLATE_LENGTH and confidence >= OCR_CONFIDENCE_THRESHOLD:
+            timestamp_str = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+            safe_filename = f"{timestamp_str}_capture.jpg"
+            save_path = os.path.join("data/images", safe_filename)
+            cv2.imwrite(save_path, frame)
+                
+            image_url = f"{str(request.base_url).rstrip('/')}/images/{safe_filename}"
+            
+            logger.info(f"API Capture Plate detected: '{plate_text}' (confidence={confidence:.2f}) -> Saved to {save_path}")
+            publisher.publish_plate(plate_text, confidence, image_url)
+            return {"success": True, "plate": plate_text, "confidence": confidence, "image_url": image_url}
+        else:
+            logger.warning("API Capture No valid plate found.")
+            return {"success": False, "plate": plate_text, "confidence": confidence, "message": "No valid plate found"}
+            
     logger.info("Starting API server on 0.0.0.0:8000...")
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
@@ -149,6 +235,14 @@ def main():
     group.add_argument("--image", type=str, metavar="PATH", help="Process a single image file")
     group.add_argument("--watch", type=str, metavar="FOLDER", help="Watch a folder for new images")
     group.add_argument("--mock-plate", type=str, metavar="PLATE", help="Skip AI and inject a plate directly")
+    group.add_argument(
+        "--stream",
+        nargs="?",
+        const="ENV",
+        type=str,
+        metavar="URL",
+        help="Read from an IP camera stream (defaults to CAMERA_SOURCE in .env)",
+    )
     group.add_argument("--api", action="store_true", help="Start FastAPI server to accept image uploads")
     args = parser.parse_args()
 
@@ -171,6 +265,17 @@ def main():
 
         elif args.mock_plate:
             run_mock(args.mock_plate, publisher)
+
+        elif args.stream is not None:
+            from config import CAMERA_SOURCE
+
+            stream_url = CAMERA_SOURCE if args.stream == "ENV" else args.stream
+            if not stream_url:
+                logger.error(
+                    "No stream URL provided and CAMERA_SOURCE is not set in .env"
+                )
+                sys.exit(1)
+            run_stream(stream_url, publisher)
 
         elif args.api:
             run_api(publisher)

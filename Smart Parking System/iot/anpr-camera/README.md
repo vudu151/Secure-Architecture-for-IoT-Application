@@ -72,6 +72,17 @@ Skip the AI entirely and inject a plate string directly to MQTT:
 python camera.py --mock-plate "30F12345"
 ```
 
+### 4. IP Camera Streaming Mode
+Read frames directly from an IP Webcam or RTSP stream and process them continuously. The camera will automatically detect plates from the live video feed.
+```bash
+python camera.py --stream "http://192.168.43.1:8080/video"
+```
+Or if you have set `CAMERA_SOURCE` in your `.env` file, simply run:
+```bash
+python camera.py --stream
+```
+
+
 ## MQTT Output
 
 The camera publishes to topic: `parking/gates/{GATE_ID}/event`
@@ -100,3 +111,4 @@ All settings can be overridden via environment variables:
 | `OCR_CONFIDENCE_THRESHOLD` | `0.5` | Min OCR confidence to accept |
 | `MIN_PLATE_LENGTH` | `5` | Min characters to be a valid plate |
 | `WATCH_INTERVAL` | `2.0` | Folder polling interval (seconds) |
+| `CAMERA_SOURCE` | `None` | URL of the IP Webcam stream |

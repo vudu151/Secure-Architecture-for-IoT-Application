@@ -9,7 +9,9 @@ logger = logging.getLogger("MQTTPublisher")
 
 class MQTTPublisher:
     def __init__(self):
-        self.client = mqtt.Client(client_id=DEVICE_UID, clean_session=True)
+        import uuid
+        unique_client_id = f"{DEVICE_UID}_{uuid.uuid4().hex[:8]}"
+        self.client = mqtt.Client(client_id=unique_client_id, clean_session=True)
         self._connected = False
 
         if MQTT_USE_TLS:
